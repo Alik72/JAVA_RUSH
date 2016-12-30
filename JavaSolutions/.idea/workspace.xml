@@ -4,7 +4,7 @@
     <list default="true" id="3857c1a7-fc66-4ed1-8d52-01b41f372b7c" name="Default" comment="" />
     <ignored path="JavaSolutions.iws" />
     <ignored path=".idea/workspace.xml" />
-    <ignored path="C:/Devel/Main-project/JavaSolutions/out/" />
+    <ignored path="$PROJECT_DIR$/../../Main-project/JavaSolutions/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +23,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Solution.java" pinned="false" current-in-tab="true">
-        <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Solution.java">
+        <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.20411664">
               <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
@@ -35,7 +35,7 @@
         </entry>
       </file>
       <file leaf-file-name="Cat.class" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/out/production/JavaSolutions/com/javarush/test/Cat.class">
+        <entry file="file://$PROJECT_DIR$/out/production/JavaSolutions/com/javarush/test/Cat.class">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -56,8 +56,8 @@
   <component name="GradleLocalSettings">
     <option name="modificationStamps">
       <map>
-        <entry key="C:/Devel/Main-project/mantis-tests" value="1461561871581" />
-        <entry key="C:/Devel/java_pft/addressbook-web-tests" value="1462029535515" />
+        <entry key="$PROJECT_DIR$/../../Main-project/mantis-tests" value="1461561871581" />
+        <entry key="$PROJECT_DIR$/../../java_pft/addressbook-web-tests" value="1462029535515" />
       </map>
     </option>
     <option name="externalProjectsViewState">
@@ -67,9 +67,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="C:/Devel/Main-project/JavaSolutions/src/com/javarush/test/Dog.java" />
-        <option value="C:/Devel/Main-project/JavaSolutions/src/com/javarush/test/Cat.java" />
-        <option value="C:/Devel/Main-project/JavaSolutions/src/com/javarush/test/Solution.java" />
+        <option value="$PROJECT_DIR$/../../Main-project/JavaSolutions/src/com/javarush/test/Dog.java" />
+        <option value="$PROJECT_DIR$/../../Main-project/JavaSolutions/src/com/javarush/test/Cat.java" />
+        <option value="$PROJECT_DIR$/../../Main-project/JavaSolutions/src/com/javarush/test/Solution.java" />
       </list>
     </option>
   </component>
@@ -104,10 +104,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaSolutions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="JavaSolutions" />
@@ -138,11 +142,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="C:/Devel/JAVA_RUSH" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -160,7 +166,7 @@
       <option name="MAIN_CLASS_NAME" value="com.javarush.test.Solution" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="C:/Devel/Main-project/JavaSolutions" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Main-project/JavaSolutions" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -180,7 +186,7 @@
       <option name="MAIN_CLASS_NAME" value="com.javarush.test.Cat" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="C:/Devel/Main-project/JavaSolutions" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Main-project/JavaSolutions" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -209,7 +215,7 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="C:/Devel/Main-project/JavaSolutions" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Main-project/JavaSolutions" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -412,7 +418,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -423,7 +429,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285968" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.295764" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12632374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -455,7 +461,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -465,15 +471,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Cat.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="37" column="39" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -483,15 +488,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Cat.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="37" column="39" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -501,15 +505,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Cat.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="37" column="39" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -519,15 +522,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Cat.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="37" column="39" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -537,15 +539,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Cat.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="37" column="39" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -555,15 +556,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Cat.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="37" column="39" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -573,15 +573,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Cat.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -591,15 +590,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Cat.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
@@ -609,15 +607,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Cat.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -627,15 +624,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Cat.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
@@ -645,33 +641,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Cat.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Cat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -681,15 +658,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Cat.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Cat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
@@ -699,15 +692,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Cat.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -717,15 +709,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Cat.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="35" selection-start-line="15" selection-start-column="2" selection-end-line="17" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -735,15 +726,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Cat.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="35" selection-start-line="15" selection-start-column="2" selection-end-line="17" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -753,15 +743,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Cat.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="35" selection-start-line="15" selection-start-column="2" selection-end-line="17" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -771,15 +760,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Cat.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="35" selection-start-line="15" selection-start-column="2" selection-end-line="17" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -789,7 +777,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -820,71 +808,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/.idea/.name">
+    <entry file="file://$PROJECT_DIR$/.idea/.name">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/.idea/misc.xml">
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/.idea/copyright/profiles_settings.xml">
+    <entry file="file://$PROJECT_DIR$/.idea/copyright/profiles_settings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/.idea/modules.xml">
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/.idea/compiler.xml">
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/.idea/encodings.xml">
+    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/out/production/JavaSolutions/com/javarush/test/Solution.class">
+    <entry file="file://$PROJECT_DIR$/out/production/JavaSolutions/com/javarush/test/Solution.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Cat.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34991422">
           <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/out/production/JavaSolutions/com/javarush/test/Cat.class">
+    <entry file="file://$PROJECT_DIR$/out/production/JavaSolutions/com/javarush/test/Cat.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -892,7 +872,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Devel/JAVA_RUSH/JavaSolutions/src/com/javarush/test/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/test/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20411664">
           <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
