@@ -1,14 +1,12 @@
 package com.javarush.test;
 
-import java.io.InputStreamReader;
-
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Лошадь и пегас
-level 11.lesson06.task01;
-Написать два класса: Horse (лошадь) и Pegas (пегас).
-Унаследовать пегаса от лошади.
+/* Домашние животные
++level11.lesson06.task02;
+Написать три класса: Pet (домашнее животное), Cat(кот) и Dog(собака).
+Унаследовать кота и собаку от животного.
 */
 
 public class Solution
@@ -17,12 +15,17 @@ public class Solution
   {
   }
 
-  public class Horse
+  public class Pet
   {
 
   }
 
-  public class Pegas
+  public class Cat
+  {
+
+  }
+
+  public class Dog
   {
 
   }
