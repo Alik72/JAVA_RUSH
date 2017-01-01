@@ -3,30 +3,61 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Все мы работники
-level 11.lesson06.task04;
-Написать четыре класса: Employee(сотрудник), Manager(управляющий), Chief(директор) и  Secretary(секретарь).
-Унаследовать управляющего, директора и секретаря от сотрудника.
+/* ИТ-компания
+level11.lesson06.task05;
+Написать девять классов: Worker(сотрудник), Clerk (клерк), IT (ИТ-специалист), Programmer(программист), ProjectManager(менеджер проекта), CTO(технический директор), HR(рекрутер), OfficeManager(офис-менеджер), Cleaner (уборщик).
+Унаследовать программиста, менеджера проекта и технического директора от ИТ-специалиста.
+Унаследовать рекрутера, уборщика и офис-менеджера от клерка.
+Унаследовать клерка и ИТ-специалиста от сотрудника.
 */
 
 public class Solution
 {
-  public class Manager
+  public static void main(String[] args)
+  {
+  }
+
+  public class Worker
   {
 
   }
 
-  public class Chief
+  public class Clerk
   {
 
   }
 
-  public class Employee
+  public class IT
   {
 
   }
 
-  public class Secretary
+  public class Programmer
+  {
+
+  }
+
+  public class ProjectManager
+  {
+
+  }
+
+  public class CTO
+  {
+
+  }
+
+  public class OfficeManager
+  {
+
+  }
+
+  public class HR
+  {
+
+  }
+
+  public class Cleaner
   {
 
   }
