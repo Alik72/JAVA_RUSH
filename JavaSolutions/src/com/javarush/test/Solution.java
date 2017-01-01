@@ -3,10 +3,10 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Домашние животные
-+level11.lesson06.task02;
-Написать три класса: Pet (домашнее животное), Cat(кот) и Dog(собака).
-Унаследовать кота и собаку от животного.
+/* В гостях у бабушки
+level11.lesson06.task03;
+Написать шесть классов: Animal (животное), Cow(корова) и Pig(свинья), Sheep(овца), Bull(бык), Goat(козел).
+Унаследовать корову, свинью, овцу, быка и козла от животного.
 */
 
 public class Solution
@@ -15,19 +15,34 @@ public class Solution
   {
   }
 
-  public class Pet
+  public class Animal
   {
 
   }
 
-  public class Cat
+  public class Cow
   {
 
   }
 
-  public class Dog
+  public class Pig
   {
 
   }
+
+  public class Sheep
+  {
+
+  }
+
+  public class Bull
+  {
+
+  }
+
+  public class Goat
+  {
+
+  }
+
 }
-
