@@ -3,46 +3,31 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* В гостях у бабушки
-level11.lesson06.task03;
-Написать шесть классов: Animal (животное), Cow(корова) и Pig(свинья), Sheep(овца), Bull(бык), Goat(козел).
-Унаследовать корову, свинью, овцу, быка и козла от животного.
+/* Все мы работники
+level 11.lesson06.task04;
+Написать четыре класса: Employee(сотрудник), Manager(управляющий), Chief(директор) и  Secretary(секретарь).
+Унаследовать управляющего, директора и секретаря от сотрудника.
 */
 
 public class Solution
 {
-  public static void main(String[] args)
-  {
-  }
-
-  public class Animal
+  public class Manager
   {
 
   }
 
-  public class Cow
+  public class Chief
   {
 
   }
 
-  public class Pig
+  public class Employee
   {
 
   }
 
-  public class Sheep
+  public class Secretary
   {
 
   }
-
-  public class Bull
-  {
-
-  }
-
-  public class Goat
-  {
-
-  }
-
 }
