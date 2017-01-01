@@ -3,28 +3,31 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Ничего не поменяешь
-level11.lesson08.task03;
-Скрыть все внутренние переменные класса Cat, а также методы, позволяющие менять внутреннее состояние объектов класса Cat.
+/* Инкапсуляция для классов Cat и Dog
+level11.lesson08.task04;
+Скрыть все внутренние переменные класса Cat и Dog. Также скрыть все методы, кроме тех, с помощью которых эти классы взаимодействуют друг с другом.
 */
 
 public class Solution
 {
   public static void main(String[] args)
   {
+    Cat cat = new Cat("Vaska",5);
+    Dog dog = new Dog("Sharik",4);
+
+    cat.isDogNear(dog);
+    dog.isCatNear(cat);
   }
 
-  public class Cat
+  public static class Cat
   {
     public String name;
-    public int age;
-    public int weight;
+    public int speed;
 
-    public Cat(String name, int age, int weight)
+    public Cat(String name, int speed)
     {
       this.name = name;
-      this.age = age;
-      this.weight = weight;
+      this.speed = speed;
     }
 
     public String getName()
@@ -32,19 +35,41 @@ public class Solution
       return name;
     }
 
-    public void setName(String name)
+    public int getSpeed()
+    {
+      return speed;
+    }
+
+    public boolean isDogNear(Dog dog)
+    {
+      return this.speed > dog.getSpeed();
+    }
+  }
+
+  public static  class Dog
+  {
+    public String name;
+    public int speed;
+
+    public Dog(String name, int speed)
     {
       this.name = name;
+      this.speed = speed;
     }
 
-    public int getAge()
+    public String getName()
     {
-      return age;
+      return name;
     }
 
-    public void setAge(int age)
+    public int getSpeed()
     {
-      this.age = age;
+      return speed;
+    }
+
+    public boolean isCatNear(Cat cat)
+    {
+      return this.speed > cat.getSpeed();
     }
   }
 }
