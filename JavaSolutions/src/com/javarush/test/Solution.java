@@ -3,12 +3,9 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* ИТ-компания
-level11.lesson06.task05;
-Написать девять классов: Worker(сотрудник), Clerk (клерк), IT (ИТ-специалист), Programmer(программист), ProjectManager(менеджер проекта), CTO(технический директор), HR(рекрутер), OfficeManager(офис-менеджер), Cleaner (уборщик).
-Унаследовать программиста, менеджера проекта и технического директора от ИТ-специалиста.
-Унаследовать рекрутера, уборщика и офис-менеджера от клерка.
-Унаследовать клерка и ИТ-специалиста от сотрудника.
+/* Все скрыто
+level11.lesson08.task01;
+Скрыть все внутренние переменные класса Cat.
 */
 
 public class Solution
@@ -17,48 +14,21 @@ public class Solution
   {
   }
 
-  public class Worker
+  public class Cat
   {
+    public String name;
+    public int age;
+    public int weight;
 
-  }
+    public Cat()
+    {
+    }
 
-  public class Clerk
-  {
-
-  }
-
-  public class IT
-  {
-
-  }
-
-  public class Programmer
-  {
-
-  }
-
-  public class ProjectManager
-  {
-
-  }
-
-  public class CTO
-  {
-
-  }
-
-  public class OfficeManager
-  {
-
-  }
-
-  public class HR
-  {
-
-  }
-
-  public class Cleaner
-  {
-
+    public Cat(String name, int age, int weight)
+    {
+      this.name = name;
+      this.age = age;
+      this.weight = weight;
+    }
   }
 }
