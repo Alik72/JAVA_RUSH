@@ -1,28 +1,30 @@
 package com.javarush.test;
 
-import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
  * Created by Homosapiens on 19.10.2016.
  */
+/* Лошадь и пегас
+level 11.lesson06.task01;
+Написать два класса: Horse (лошадь) и Pegas (пегас).
+Унаследовать пегаса от лошади.
+*/
+
 public class Solution
 {
-  public static void main(String[] args) throws IOException {
-
-    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    String s = reader.readLine();
-
-
-      String s1 = s.replace("мама", "Мама");
-      String s2 = s.replace("мыла", "Мыла");
-      String s3 = s.replace("раму", "Раму");
-
-      System.out.println(s1+s2+s3);
-    }
+  public static void main(String[] args)
+  {
   }
 
+  public class Horse
+  {
 
+  }
 
+  public class Pegas
+  {
+
+  }
+}
 
