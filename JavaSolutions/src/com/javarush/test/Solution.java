@@ -3,29 +3,36 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Ничего не выводится на экран
-level12.lesson02.task02;
-Переопределить метод getName в классе Whale(Кит), чтобы программа ничего не выдавала на экран.
+/* Кот от кота, а собака от собаки
+level12.lesson02.task03;
+Переопределить метод getChild в классах Cat(кот) и Dog(собака), чтобы кот порождал кота, а собака – собаку.
 */
 
 public class Solution
 {
   public static void main(String[] args)
   {
-    Cow cow = new Whale();
+    Pet pet1 = new Cat();
+    Pet cat = pet1.getChild();
 
-    System.out.println(cow.getName());
+    Pet pet2 = new Dog();
+    Pet dog = pet2.getChild();
   }
 
-  public static class Cow
+  public static class Pet
   {
-    public String getName()
+    public Pet getChild()
     {
-      return "Я - корова";
+      return new Pet();
     }
   }
 
-  public static class Whale extends Cow
+  public static class Cat extends Pet
+  {
+
+  }
+
+  public static class Dog extends Pet
   {
 
   }
