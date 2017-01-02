@@ -3,8 +3,8 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Исправь код. Первая задача
-level12.lesson06.task02
+/* Исправь код. Вторая задача
+level12.lesson06.task03;
 Исправь код, чтобы программа компилировалась.
 */
 
@@ -15,7 +15,6 @@ public class Solution
 
   }
 
-
   public static class Pet
   {
     public String getName()
@@ -23,7 +22,7 @@ public class Solution
       return "Я - котенок";
     }
 
-    public abstract Pet getChild();
+    public Pet getChild();
   }
 
 }
