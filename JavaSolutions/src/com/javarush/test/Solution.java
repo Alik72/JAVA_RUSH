@@ -3,45 +3,31 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Задача по алгоритмам
-level11.lesson11.bonus03;
-Написать метод, который возвращает минимальное и максимальное числа в массиве.
+/* Я не корова, Я - кит.
+level12.lesson02.task01;
+Переопределить метод getName в классе Whale(Кит), чтобы программа выдавала:
+Я не корова, Я - кит.
 */
 
 public class Solution
 {
-  public static void main(String[] args) throws Exception
+  public static void main(String[] args)
   {
-    int[] data = new int[]{1, 2, 3, 5, -2, -8, 0, 77, 5, 5};
+    Cow cow = new Whale();
 
-    Pair<Integer, Integer> result = getMinimumAndMaximum(data);
-
-    System.out.println("Minimum is " + result.x);
-    System.out.println("Maximum is " + result.y);
+    System.out.println(cow.getName());
   }
 
-  public static Pair<Integer, Integer> getMinimumAndMaximum(int[] array)
+  public static class Cow
   {
-    if (array == null || array.length == 0)
+    public String getName()
     {
-      return new Pair<Integer, Integer>(null, null);
+      return "Я - корова";
     }
-
-    //Напишите тут ваше решение
-
-    return new Pair<Integer, Integer>(0, 0);
   }
 
-
-  public static class Pair<X, Y>
+  public static class Whale extends Cow
   {
-    public X x;
-    public Y y;
 
-    public Pair(X x, Y y)
-    {
-      this.x = x;
-      this.y = y;
-    }
   }
 }
