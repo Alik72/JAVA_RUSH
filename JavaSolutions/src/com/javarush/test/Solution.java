@@ -3,10 +3,9 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Три метода возвращают максимальное из двух переданных в него чисел
-level 12.lesson04.task05;
-Написать public static методы: int max(int, int), long max (long, long), double max (double, double).
-Каждый метод должен возвращать максимальное из двух переданных в него чисел.
+/* Абстрактный класс Pet
+level 12.lesson06.task01;
+Сделать класс Pet абстрактным.
 */
 
 public class Solution
@@ -16,5 +15,12 @@ public class Solution
 
   }
 
-  //Напишите тут ваши методы
+  public static class Pet
+  {
+    public String getName()
+    {
+      return "Я - котенок";
+    }
+  }
+
 }
