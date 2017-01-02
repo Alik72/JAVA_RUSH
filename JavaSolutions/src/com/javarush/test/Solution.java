@@ -3,41 +3,45 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.HashMap;
-import java.util.Map;
-
-/* Нужно исправить программу, чтобы компилировалась и работала
-level10.lesson11.bonus01;
-Задача: Программа демонстрирует работу HashMap: вводит с клавиатуры набор пар (номер и строку), помещает их в HashMap и выводит на экран содержимое HashMap.
+/* Задача по алгоритмам
+level11.lesson11.bonus03;
+Написать метод, который возвращает минимальное и максимальное числа в массиве.
 */
 
-public class Solution {
-  HashMap<int, String> map;
-  Integer index;
-  String name;
+public class Solution
+{
+  public static void main(String[] args) throws Exception
+  {
+    int[] data = new int[]{1, 2, 3, 5, -2, -8, 0, 77, 5, 5};
 
-  public Solution() {
-    this.map = new HashMap<int, String>();
-    map.put(index, name);
+    Pair<Integer, Integer> result = getMinimumAndMaximum(data);
+
+    System.out.println("Minimum is " + result.x);
+    System.out.println("Maximum is " + result.y);
   }
 
-  public static void main(String[] args) throws IOException {
-    Solution solution = new Solution();
-    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
-    for (int i = 0; i < 10; i++) {
-      int index = Integer.parseInt(reader.readLine());
-      String name = reader.readLine();
-      solution.map.put(index, name);
+  public static Pair<Integer, Integer> getMinimumAndMaximum(int[] array)
+  {
+    if (array == null || array.length == 0)
+    {
+      return new Pair<Integer, Integer>(null, null);
     }
 
-    for (Map.Entry<int, String> pair : solution.map.entrySet()) {
-      int index = pair.getKey();
-      String name = pair.getValue();
-      System.out.println("Id=" + index + " Name=" + name);
+    //Напишите тут ваше решение
+
+    return new Pair<Integer, Integer>(0, 0);
+  }
+
+
+  public static class Pair<X, Y>
+  {
+    public X x;
+    public Y y;
+
+    public Pair(X x, Y y)
+    {
+      this.x = x;
+      this.y = y;
     }
   }
 }
