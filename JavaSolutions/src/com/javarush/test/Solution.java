@@ -3,10 +3,9 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Я не корова, Я - кит.
-level12.lesson02.task01;
-Переопределить метод getName в классе Whale(Кит), чтобы программа выдавала:
-Я не корова, Я - кит.
+/* Ничего не выводится на экран
+level12.lesson02.task02;
+Переопределить метод getName в классе Whale(Кит), чтобы программа ничего не выдавала на экран.
 */
 
 public class Solution
@@ -31,3 +30,4 @@ public class Solution
 
   }
 }
+
