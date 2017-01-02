@@ -3,9 +3,10 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Исправь код. Вторая задача
-level12.lesson06.task03;
-Исправь код, чтобы программа компилировалась.
+/* Класс Cow от Animal
+level 12.lesson06.task04;
+Унаследуй класс Cow от Animal.
+Реализуй все недостающие методы в классе Cow.
 */
 
 public class Solution
@@ -15,14 +16,13 @@ public class Solution
 
   }
 
-  public static class Pet
+  public static abstract class Animal
   {
-    public String getName()
-    {
-      return "Я - котенок";
-    }
+    public abstract String getName();
+  }
 
-    public Pet getChild();
+  public static class Cow
+  {
   }
 
 }
