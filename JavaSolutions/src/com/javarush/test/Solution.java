@@ -3,38 +3,40 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Кот от кота, а собака от собаки
-level12.lesson02.task03;
-Переопределить метод getChild в классах Cat(кот) и Dog(собака), чтобы кот порождал кота, а собака – собаку.
+/* Или «Кошка», или «Собака», или «Птица», или «Лампа»
+level12.lesson02.task04;
+Написать метод, который определяет, объект какого класса ему передали, и выводит на экран одну из надписей: Кошка, Собака, Птица, Лампа.
 */
 
 public class Solution
 {
   public static void main(String[] args)
   {
-    Pet pet1 = new Cat();
-    Pet cat = pet1.getChild();
-
-    Pet pet2 = new Dog();
-    Pet dog = pet2.getChild();
+    printObjectType(new Cat());
+    printObjectType(new Bird());
+    printObjectType(new Lamp());
+    printObjectType(new Cat());
+    printObjectType(new Dog());
   }
 
-  public static class Pet
+  public static void printObjectType(Object o)
   {
-    public Pet getChild()
-    {
-      return new Pet();
-    }
+    //Напишите тут ваше решение
   }
 
-  public static class Cat extends Pet
+  public static class Cat
   {
-
   }
 
-  public static class Dog extends Pet
+  public static class Dog
   {
+  }
 
+  public static class Bird
+  {
+  }
+
+  public static class Lamp
+  {
   }
 }
-
