@@ -3,10 +3,10 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Класс Cow от Animal
-level 12.lesson06.task04;
-Унаследуй класс Cow от Animal.
-Реализуй все недостающие методы в классе Cow.
+/* Классы Cat и Dog от Pet
+level 12.lesson06.task05;
+Унаследуй классы Cat и Dog от Pet.
+Реализуй недостающие методы. Классы Cat и Dog не должны быть абстрактными.
 */
 
 public class Solution
@@ -16,13 +16,20 @@ public class Solution
 
   }
 
-  public static abstract class Animal
+  public static abstract class Pet
   {
     public abstract String getName();
+    public abstract Pet getChild();
   }
 
-  public static class Cow
+  public static class Cat
   {
+
+  }
+
+  public static class Dog
+  {
+
   }
 
 }
