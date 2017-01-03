@@ -3,10 +3,10 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Интерфейсы Fly, Run, Swim
-level 12.lesson09.task02;
-Напиши public интерфейсы Fly(летать), Run(бежать/ездить), Swim(плавать).
-Добавить в каждый интерфейс по одному методу.
+/* Fly, Move, Eat для классов Dog, Car, Duck, Airplane
+level12.lesson09.task03;
+Есть public интерфейсы Fly(летать), Move(передвигаться), Eat(есть).
+Добавь эти интерфейсы классам Dog(собака), Car(автомобиль), Duck(утка), Airplane(самолет).
 */
 
 public class Solution
@@ -16,6 +16,34 @@ public class Solution
 
   }
 
-//add interfaces here - добавь интерфейсы тут
+  public interface Fly
+  {
+    public void fly();
+  }
 
+  public interface Move
+  {
+    public void move();
+  }
+
+  public interface Eat
+  {
+    public void eat();
+  }
+
+  public class Dog
+  {
+  }
+
+  public class Duck
+  {
+  }
+
+  public class Car
+  {
+  }
+
+  public class Airplane
+  {
+  }
 }
