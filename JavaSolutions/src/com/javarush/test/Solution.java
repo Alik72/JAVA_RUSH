@@ -3,44 +3,50 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Метод setName в классе Cat
-level 12.lesson12.home02;
-Переопредели метод setName в классе Cat так, чтобы программа выдавала на экран надпись
-«Я - кот».
+/* Что это? «Кот», «Тигр», «Лев», «Бык», «хз»
+level12.lesson12.home04;
+Напиши метод, который определяет, какой объект передали в него.
+Программа должна выводить на экран одну из надписей:
+«Кот», «Тигр», «Лев», «Бык», «хз».
 */
 
 public class Solution
 {
   public static void main(String[] args)
   {
-    Pet pet = new Cat();
-    pet.setName("Я - пушистик");
-
-    System.out.println(pet.getName());
+    System.out.println(getObjectType(new Cat()));
+    System.out.println(getObjectType(new Tiger()));
+    System.out.println(getObjectType(new Lion()));
+    System.out.println(getObjectType(new Bull()));
+    System.out.println(getObjectType(new Pig()));
   }
 
-  public static class Pet
+  public static String getObjectType(Object o)
   {
-    protected String name;
-
-    public Pet()
-    {
-    }
-
-    public String getName()
-    {
-      return name;
-    }
-
-    public void setName(String name)
-    {
-      this.name = name;
-    }
-
+    if (o instanceof Cat)return "Кот";
+    if (o instanceof Tiger)return "Тигр";
+    if (o instanceof Lion) return "Лев";
+    if (o instanceof Bull)return "Бык";
+    else return "хз";
   }
 
-  public static class Cat extends Pet
+  public static class Cat
   {
+  }
 
+  public static class Tiger
+  {
+  }
+
+  public static class Lion
+  {
+  }
+
+  public static class Bull
+  {
+  }
+
+  public static class Pig
+  {
   }
 }
