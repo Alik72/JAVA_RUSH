@@ -3,55 +3,46 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Что это? «Кот», «Тигр», «Лев», «Бык», «Корова», «Животное»
-level12.lesson12.home05;
-Напиши метод, который определяет, какой объект передали в него.
-Программа должна выводить на экран одну из надписей:
-«Кот», «Тигр», «Лев», «Бык», «Корова», «Животное».
-Замечание: постарайся определять тип животного как можно более точно.
+/* Нужно исправить программу, чтобы компилировалась и работала
+level12.lesson12.bonus01;
+Расставить правильно ключевые слова abstract, чтобы программа компилировалась (там где надо и не надо).
 */
 
 public class Solution
 {
+
   public static void main(String[] args)
   {
-    System.out.println(getObjectType(new Cat()));
-    System.out.println(getObjectType(new Tiger()));
-    System.out.println(getObjectType(new Lion()));
-    System.out.println(getObjectType(new Bull()));
-    System.out.println(getObjectType(new Cow()));
-    System.out.println(getObjectType(new Animal()));
+    Horse horse = new Pegas();
+    horse.run();
   }
 
-  public static String getObjectType(Object o)
+  public static interface Fly
   {
-    //напишите тут ваш код
-
-    return "Животное";
+    public abstract void fly();
   }
 
-  public static class Cat  extends Animal   //<--Классы наследуются!!
+  public static abstract class Horse
   {
+    public void run()
+    {
+
+    }
   }
 
-  public static class Tiger  extends Cat
+  public static class Pegas extends Horse implements Fly
   {
+    public abstract void fly()
+    {
+
+    }
   }
 
-  public static class Lion  extends Cat
+  public static class SwimPegas extends Pegas
   {
+    public void swim();
   }
 
-  public static class Bull  extends Animal
-  {
-  }
-
-  public static class Cow  extends Animal
-  {
-  }
-
-  public static class Animal
-  {
-  }
 }
+
 
