@@ -3,21 +3,44 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Класс Human и интерфейсы Run, Swim
-level 12.lesson09.task05;
-
-Напиши public класс Human(человек) и  public интерфейсы Run(бежать/ездить), Swim(плавать).
-Добавь в каждый интерфейс по одному методу.
-Добавь эти интерфейсы классу Human, но не реализуй методы.
-Объяви класс Human абстрактным.
+/* Метод setName в классе Cat
+level 12.lesson12.home02;
+Переопредели метод setName в классе Cat так, чтобы программа выдавала на экран надпись
+«Я - кот».
 */
 
 public class Solution
 {
   public static void main(String[] args)
   {
+    Pet pet = new Cat();
+    pet.setName("Я - пушистик");
+
+    System.out.println(pet.getName());
+  }
+
+  public static class Pet
+  {
+    protected String name;
+
+    public Pet()
+    {
+    }
+
+    public String getName()
+    {
+      return name;
+    }
+
+    public void setName(String name)
+    {
+      this.name = name;
+    }
 
   }
 
-  //add public interfaces and public class here - добавь public интерфейсы и public класс тут
+  public static class Cat extends Pet
+  {
+
+  }
 }
