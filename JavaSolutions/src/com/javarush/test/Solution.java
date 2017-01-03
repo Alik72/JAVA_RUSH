@@ -3,10 +3,9 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Классы Cat и Dog от Pet
-level 12.lesson06.task05;
-Унаследуй классы Cat и Dog от Pet.
-Реализуй недостающие методы. Классы Cat и Dog не должны быть абстрактными.
+/* Интерфейс Fly
+level12.lesson09.task01;
+Напиши свой public интерфейс Fly(летать). Добавь в него два метода.
 */
 
 public class Solution
@@ -15,21 +14,6 @@ public class Solution
   {
 
   }
-
-  public static abstract class Pet
-  {
-    public abstract String getName();
-    public abstract Pet getChild();
-  }
-
-  public static class Cat
-  {
-
-  }
-
-  public static class Dog
-  {
-
-  }
+//add an interface here - добавь интерфейс тут
 
 }
