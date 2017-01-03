@@ -3,9 +3,10 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Интерфейс Fly
-level12.lesson09.task01;
-Напиши свой public интерфейс Fly(летать). Добавь в него два метода.
+/* Интерфейсы Fly, Run, Swim
+level 12.lesson09.task02;
+Напиши public интерфейсы Fly(летать), Run(бежать/ездить), Swim(плавать).
+Добавить в каждый интерфейс по одному методу.
 */
 
 public class Solution
@@ -14,6 +15,7 @@ public class Solution
   {
 
   }
-//add an interface here - добавь интерфейс тут
+
+//add interfaces here - добавь интерфейсы тут
 
 }
