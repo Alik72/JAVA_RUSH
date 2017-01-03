@@ -3,10 +3,10 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Fly, Move, Eat для классов Dog, Car, Duck, Airplane
-level12.lesson09.task03;
-Есть public интерфейсы Fly(летать), Move(передвигаться), Eat(есть).
-Добавь эти интерфейсы классам Dog(собака), Car(автомобиль), Duck(утка), Airplane(самолет).
+/* Fly, Run, Swim для классов Human, Duck, Penguin, Airplane
+level12.lesson09.task04;
+Есть public интерфейсы Fly(летать), Run(бежать/ездить), Swim(плавать).
+Добавь эти интерфейсы классам Human(человек), Duck(утка), Penguin(пингвин), Airplane(самолет).
 */
 
 public class Solution
@@ -21,29 +21,34 @@ public class Solution
     public void fly();
   }
 
-  public interface Move
+  public interface Run
   {
-    public void move();
+    public void run();
   }
 
-  public interface Eat
+  public interface Swim
   {
-    public void eat();
+    public void swim();
   }
 
-  public class Dog
+
+  public class Human
   {
+
   }
 
   public class Duck
   {
+
   }
 
-  public class Car
+  public class Penguin
   {
+
   }
 
   public class Airplane
   {
+
   }
 }
