@@ -3,11 +3,12 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Что это? «Кот», «Тигр», «Лев», «Бык», «хз»
-level12.lesson12.home04;
+/* Что это? «Кот», «Тигр», «Лев», «Бык», «Корова», «Животное»
+level12.lesson12.home05;
 Напиши метод, который определяет, какой объект передали в него.
 Программа должна выводить на экран одну из надписей:
-«Кот», «Тигр», «Лев», «Бык», «хз».
+«Кот», «Тигр», «Лев», «Бык», «Корова», «Животное».
+Замечание: постарайся определять тип животного как можно более точно.
 */
 
 public class Solution
@@ -18,35 +19,39 @@ public class Solution
     System.out.println(getObjectType(new Tiger()));
     System.out.println(getObjectType(new Lion()));
     System.out.println(getObjectType(new Bull()));
-    System.out.println(getObjectType(new Pig()));
+    System.out.println(getObjectType(new Cow()));
+    System.out.println(getObjectType(new Animal()));
   }
 
   public static String getObjectType(Object o)
   {
-    if (o instanceof Cat)return "Кот";
-    if (o instanceof Tiger)return "Тигр";
-    if (o instanceof Lion) return "Лев";
-    if (o instanceof Bull)return "Бык";
-    else return "хз";
+    //напишите тут ваш код
+
+    return "Животное";
   }
 
-  public static class Cat
+  public static class Cat  extends Animal   //<--Классы наследуются!!
   {
   }
 
-  public static class Tiger
+  public static class Tiger  extends Cat
   {
   }
 
-  public static class Lion
+  public static class Lion  extends Cat
   {
   }
 
-  public static class Bull
+  public static class Bull  extends Animal
   {
   }
 
-  public static class Pig
+  public static class Cow  extends Animal
+  {
+  }
+
+  public static class Animal
   {
   }
 }
+
