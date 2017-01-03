@@ -3,10 +3,13 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Fly, Run, Swim для классов Human, Duck, Penguin, Airplane
-level12.lesson09.task04;
-Есть public интерфейсы Fly(летать), Run(бежать/ездить), Swim(плавать).
-Добавь эти интерфейсы классам Human(человек), Duck(утка), Penguin(пингвин), Airplane(самолет).
+/* Класс Human и интерфейсы Run, Swim
+level 12.lesson09.task05;
+
+Напиши public класс Human(человек) и  public интерфейсы Run(бежать/ездить), Swim(плавать).
+Добавь в каждый интерфейс по одному методу.
+Добавь эти интерфейсы классу Human, но не реализуй методы.
+Объяви класс Human абстрактным.
 */
 
 public class Solution
@@ -16,39 +19,5 @@ public class Solution
 
   }
 
-  public interface Fly
-  {
-    public void fly();
-  }
-
-  public interface Run
-  {
-    public void run();
-  }
-
-  public interface Swim
-  {
-    public void swim();
-  }
-
-
-  public class Human
-  {
-
-  }
-
-  public class Duck
-  {
-
-  }
-
-  public class Penguin
-  {
-
-  }
-
-  public class Airplane
-  {
-
-  }
+  //add public interfaces and public class here - добавь public интерфейсы и public класс тут
 }
