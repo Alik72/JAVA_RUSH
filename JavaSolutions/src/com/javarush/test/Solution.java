@@ -3,45 +3,38 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Задача по алгоритмам
-level12.lesson12.bonus03;
-Написать метод, который возвращает минимальное число в массиве и его позицию (индекс).
+/* Пиво
+level13.lesson02.task01;
+1. Подумай, какой из двух интерфейсов нужно реализовать в классе Beer.
+2. Добавь к классу Beer этот интерфейс и реализуйте все нереализованные методы.
+3. Подумай, как связаны переменная  READY_TO_GO_HOME и метод isReadyToGoHome.
+4. Верни значение переменной READY_TO_GO_HOME в методе isReadyToGoHome.
 */
 
 public class Solution
 {
   public static void main(String[] args) throws Exception
   {
-    int[] data = new int[]{1, 2, 3, 5, -2, -8, 0, 77, 5, 5};
-
-    Pair<Integer, Integer> result = getMinimumAndIndex(data);
-
-    System.out.println("Minimum is " + result.x);
-    System.out.println("Index of minimum element is " + result.y);
   }
 
-  public static Pair<Integer, Integer> getMinimumAndIndex(int[] array)
+  public interface Drink
   {
-    if (array == null || array.length == 0)
-    {
-      return new Pair<Integer, Integer>(null, null);
-    }
+    void askMore(String message);
 
+    void sayThankYou();
 
-
-    return new Pair<Integer, Integer>(0, 0);
+    boolean isReadyToGoHome();
   }
 
-
-  public static class Pair<X, Y>
+  public interface Alcohol extends Drink
   {
-    public X x;
-    public Y y;
+    boolean READY_TO_GO_HOME = false;
 
-    public Pair(X x, Y y)
-    {
-      this.x = x;
-      this.y = y;
-    }
+    void sleepOnTheFloor();
+  }
+
+  public static class Beer
+  {
+
   }
 }
