@@ -3,31 +3,27 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Переводчик с английского
-level 13.lesson04.task01;
-1. Создать класс EnglishTranslator, который наследуется от Translator.
-2. Реализовать все абстрактные методы.
-3. Подумай, что должен возвращать метод getLanguage.
-4. Программа должна выводить на экран "Я переводчик с английского".
-5. Метод main менять нельзя.
+/* Исправление кода
+level13.lesson04.task02;
+Исправить код так, чтобы программа выполнялась и выводила "Я переводчик с английского".
+Метод main менять нельзя!
 */
 
 public class Solution
 {
   public static void main(String[] args) throws Exception
   {
-    EnglishTranslator englishTranslator = new EnglishTranslator();
-    System.out.println(englishTranslator.translate());
+    Translator translator = new Translator();
+    System.out.println(translator.translate());
   }
 
-  public static abstract class Translator
+  public abstract static class Translator
   {
-    public abstract String getLanguage();
-
     public String translate()
     {
-      return "Я переводчик с " + getLanguage();
+      return "Я переводчик с английского";
     }
   }
+
 
 }
