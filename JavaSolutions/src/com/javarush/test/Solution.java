@@ -3,63 +3,31 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* CleverMan и SmartGirl
-level13.lesson02.task10;
-1. Добавь интерфейсы Secretary и Boss к классам CleverMan и SmartGirl. По одному на каждый. Подумай, кому какой.
-2. Унаследуй  интерфейсы Secretary и Boss от интерфейсов Person и Workable так,
-чтобы все методы у классов CleverMan и SmartGirl оказались объявленными в каком-то интерфейсе.
+/* Переводчик с английского
+level 13.lesson04.task01;
+1. Создать класс EnglishTranslator, который наследуется от Translator.
+2. Реализовать все абстрактные методы.
+3. Подумай, что должен возвращать метод getLanguage.
+4. Программа должна выводить на экран "Я переводчик с английского".
+5. Метод main менять нельзя.
 */
 
 public class Solution
 {
   public static void main(String[] args) throws Exception
   {
+    EnglishTranslator englishTranslator = new EnglishTranslator();
+    System.out.println(englishTranslator.translate());
   }
 
-  interface Person
+  public static abstract class Translator
   {
-    void use(Person person);
-    void startToWork();
-  }
+    public abstract String getLanguage();
 
-  interface Workable
-  {
-    boolean wantGetExtraWork();
-  }
-
-  interface Secretary
-  {
-  }
-
-  interface Boss
-  {
-  }
-
-  class CleverMan
-  {
-    public void use(Person person)
+    public String translate()
     {
-      person.startToWork();
-    }
-
-    public void startToWork()
-    {
-    }
-
-    public boolean wantGetExtraWork()
-    {
-      return true;
+      return "Я переводчик с " + getLanguage();
     }
   }
 
-  class SmartGirl
-  {
-    public void use(Person person)
-    {
-    }
-
-    public void startToWork()
-    {
-    }
-  }
 }
