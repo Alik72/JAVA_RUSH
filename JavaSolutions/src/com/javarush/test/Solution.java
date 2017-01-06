@@ -3,36 +3,28 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Пиво и кола
-level 13.lesson02.task03;
-Реализуй интерфейс Drink в классах Beer и Cola.
+/* Selectable и Updatable
+level 13.lesson02.task04;
+1. Создай класс Screen.
+2. Реализуй в нем интерфейсы Selectable с методом onSelect, Updatable с методом refresh.
 */
 
 public class Solution
 {
   public static void main(String[] args) throws Exception
   {
-
-    print(new Beer());
-    print(new Cola());
-
   }
 
-  private static void print(Drink drink)
+  interface Selectable
   {
-    System.out.println(drink.getClass().getSimpleName());
+    void onSelect();
   }
 
-  public interface Drink
+  interface Updatable
   {
-    boolean isAlcoholic();
+    void refresh();
   }
 
-  public static class Beer
-  {
-  }
-
-  public static class Cola
-  {
-  }
+  //напишите тут ваш класс
 }
+
