@@ -3,17 +3,24 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Пиво: возвращение
-level 13.lesson02.task02;
-Добавь к классу AlcoholicBeer интерфейс Drink и реализуй все нереализованные методы.
+/* Пиво и кола
+level 13.lesson02.task03;
+Реализуй интерфейс Drink в классах Beer и Cola.
 */
 
 public class Solution
 {
   public static void main(String[] args) throws Exception
   {
-    Drink beer = new AlcoholicBeer();
-    System.out.println(beer.toString());
+
+    print(new Beer());
+    print(new Cola());
+
+  }
+
+  private static void print(Drink drink)
+  {
+    System.out.println(drink.getClass().getSimpleName());
   }
 
   public interface Drink
@@ -21,19 +28,11 @@ public class Solution
     boolean isAlcoholic();
   }
 
-  public static class AlcoholicBeer
+  public static class Beer
   {
-    @Override
-    public String toString()
-    {
-      if (isAlcoholic()) {
-        return "Напиток алкогольный";
-      }
-      else {
-        return "Напиток безалкогольный";
-      }
+  }
 
-    }
-
+  public static class Cola
+  {
   }
 }
