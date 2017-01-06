@@ -5,17 +5,22 @@ import java.awt.*;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Интерфейс Animal
-level13.lesson04.task03;
-1. Унаследовать Fox от интерфейса Animal.
-2. Поменяй код так, чтобы в классе Fox был только один метод - getName.
-3. Создавать дополнительные классы и удалять методы нельзя!
+/* Класс BigFox
+level 13.lesson04.task04;
+1. Исправь класс BigFox так, чтобы программа компилировалась.
+2. Метод main менять нельзя.
 */
 
 public class Solution
 {
+
   public static void main(String[] args) throws Exception
   {
+
+    Fox bigFox = new BigFox();
+    System.out.println(bigFox.getName());
+    System.out.println(bigFox.getColor());
+
   }
 
   public interface Animal
@@ -23,11 +28,20 @@ public class Solution
     Color getColor();
   }
 
-  public static class Fox
+  public static abstract class Fox implements Animal
   {
-    public String getName()
-    {
+    public String getName() {
       return "Fox";
     }
   }
+
+  //add your code below
+  public static class BigFox
+  {
+    public Color () {
+      return Color.GRAY;
+    }
+  }
+
 }
+
