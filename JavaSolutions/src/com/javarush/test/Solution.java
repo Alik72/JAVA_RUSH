@@ -3,47 +3,23 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Баг в initializeIdAndName
-level 13.lesson02.task06;
-1. Подумать, что в программе неправильно.
-2. Вынести реализацию метода initializeIdAndName в класс User.
-3. initializeIdAndName в классе User должен возвращать тип User.
-4. Поправить программу, чтобы компилировалась и работала.
+/* Параметризованый интерфейс
+level 13.lesson02.task07;
+В классе StringObject реализуй интерфейс SimpleObject с параметром типа String.
 */
 
 public class Solution
 {
   public static void main(String[] args) throws Exception
   {
-    System.out.println(Matrix.NEO);
-    System.out.println(Matrix.TRINITY);
   }
 
-  static class Matrix
+  interface SimpleObject<T>
   {
-    public static DBObject NEO = new User().initializeIdAndName(1, "Neo");
-    public static DBObject TRINITY = new User().initializeIdAndName(2, "Trinity");
+    SimpleObject<T> getInstance();
   }
 
-  interface DBObject
+  class StringObject //допишите здесь ваш код
   {
-    DBObject initializeIdAndName(long id, String name) {
-      this.id = id;
-      this.name = name;
-      return this;
-    }
   }
-
-  static class User implements DBObject
-  {
-    long id;
-    String name;
-
-    @Override
-    public String toString()
-    {
-      return String.format("User has name %s, id = %d", name, id);
-    }
-  }
-
 }
