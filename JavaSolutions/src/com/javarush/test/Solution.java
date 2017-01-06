@@ -3,37 +3,35 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Некорректные строки
-level13.lesson11.home01;
-Удали все некорректные строки в интерфейсе Button.
+/* Погода
+level13.lesson11.home02
+1. В классе Today реализовать интерфейс Weather.
+2. Подумай, как связан параметр String type с методом getWeatherType().
+3. Интерфейсы Weather и WeatherType уже реализованы.
 */
 
 public class Solution
 {
-  public static void main(String[] args) throws Exception
+  public static void main(String[] args)
   {
-    System.out.println(SimpleObject.NAME);
-    System.out.println(Button.NAME);
+    System.out.println(new Today(WeatherType.CLOUDY));
+    System.out.println(new Today(WeatherType.FOGGY));
+    System.out.println(new Today(WeatherType.FROZEN));
   }
 
-  interface SimpleObject
+  static class Today
   {
-    String NAME = "SimpleObject";
-    void onPress();
-  }
+    private String type;
 
-  interface Button extends SimpleObject
-  {
+    Today(String type)
+    {
+      this.type = type;
+    }
 
-    final String NAME = "Submit";
-    public void onPress();
-    protected void onPress();
-    void onPress();
-    private void onPress();
-
-    protected String onPress(Object o);
-    String onPress(Object o);
-    private String onPress(Object o);
-
+    @Override
+    public String toString()
+    {
+      return String.format("%s for today", this.getWeatherType());
+    }
   }
 }
