@@ -1,47 +1,32 @@
 package com.javarush.test;
 
-import java.awt.*;
-
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Класс BigFox
-level 13.lesson04.task04;
-1. Исправь класс BigFox так, чтобы программа компилировалась.
-2. Метод main менять нельзя.
+/* Dog, Cat и Mouse
+level 13.lesson06.task01;
+1. Создать классы Dog, Cat и Mouse.
+2. Реализовать интерфейсы в добавленных классах, учитывая что:
+- Кот(Cat) может передвигаться, может кого-то съесть и может быть сам съеден.
+- Мышь(Mouse) может передвигаться и может быть съедена.
+- Собака(Dog) может передвигаться и съесть кого-то.
 */
 
 public class Solution
 {
 
-  public static void main(String[] args) throws Exception
+  public interface Moveable //может двигаться
   {
-
-    Fox bigFox = new BigFox();
-    System.out.println(bigFox.getName());
-    System.out.println(bigFox.getColor());
-
+    void move();
   }
 
-  public interface Animal
+  public interface Eatable  //может быть съеден
   {
-    Color getColor();
+    void eaten();
   }
 
-  public static abstract class Fox implements Animal
+  public interface Eat  //может кого-нибудь съесть
   {
-    public String getName() {
-      return "Fox";
-    }
+    void eat();
   }
-
-  //add your code below
-  public static class BigFox
-  {
-    public Color () {
-      return Color.GRAY;
-    }
-  }
-
 }
-
