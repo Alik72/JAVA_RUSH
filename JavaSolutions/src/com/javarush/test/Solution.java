@@ -1,29 +1,33 @@
 package com.javarush.test;
 
+import java.awt.*;
+
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Исправление кода
-level13.lesson04.task02;
-Исправить код так, чтобы программа выполнялась и выводила "Я переводчик с английского".
-Метод main менять нельзя!
+/* Интерфейс Animal
+level13.lesson04.task03;
+1. Унаследовать Fox от интерфейса Animal.
+2. Поменяй код так, чтобы в классе Fox был только один метод - getName.
+3. Создавать дополнительные классы и удалять методы нельзя!
 */
 
 public class Solution
 {
   public static void main(String[] args) throws Exception
   {
-    Translator translator = new Translator();
-    System.out.println(translator.translate());
   }
 
-  public abstract static class Translator
+  public interface Animal
   {
-    public String translate()
+    Color getColor();
+  }
+
+  public static class Fox
+  {
+    public String getName()
     {
-      return "Я переводчик с английского";
+      return "Fox";
     }
   }
-
-
 }
