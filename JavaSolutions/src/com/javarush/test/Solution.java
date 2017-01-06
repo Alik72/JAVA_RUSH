@@ -3,35 +3,17 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Погода
-level13.lesson11.home02
-1. В классе Today реализовать интерфейс Weather.
-2. Подумай, как связан параметр String type с методом getWeatherType().
-3. Интерфейсы Weather и WeatherType уже реализованы.
+/* Чтение файла
+level13.lesson11.home03;
+1. Считать с консоли имя файла.
+2. Вывести в консоль(на экран) содержимое файла.
+3. Не забыть освободить ресурсы. Закрыть поток чтения с файла и поток ввода с клавиатуры.
 */
 
 public class Solution
 {
   public static void main(String[] args)
   {
-    System.out.println(new Today(WeatherType.CLOUDY));
-    System.out.println(new Today(WeatherType.FOGGY));
-    System.out.println(new Today(WeatherType.FROZEN));
-  }
-
-  static class Today
-  {
-    private String type;
-
-    Today(String type)
-    {
-      this.type = type;
-    }
-
-    @Override
-    public String toString()
-    {
-      return String.format("%s for today", this.getWeatherType());
-    }
+    //add your code here
   }
 }
