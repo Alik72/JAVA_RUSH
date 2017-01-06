@@ -3,30 +3,37 @@ package com.javarush.test;
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Dog, Cat и Mouse
-level 13.lesson06.task01;
-1. Создать классы Dog, Cat и Mouse.
-2. Реализовать интерфейсы в добавленных классах, учитывая что:
-- Кот(Cat) может передвигаться, может кого-то съесть и может быть сам съеден.
-- Мышь(Mouse) может передвигаться и может быть съедена.
-- Собака(Dog) может передвигаться и съесть кого-то.
+/* Некорректные строки
+level13.lesson11.home01;
+Удали все некорректные строки в интерфейсе Button.
 */
 
 public class Solution
 {
-
-  public interface Moveable //может двигаться
+  public static void main(String[] args) throws Exception
   {
-    void move();
+    System.out.println(SimpleObject.NAME);
+    System.out.println(Button.NAME);
   }
 
-  public interface Eatable  //может быть съеден
+  interface SimpleObject
   {
-    void eaten();
+    String NAME = "SimpleObject";
+    void onPress();
   }
 
-  public interface Eat  //может кого-нибудь съесть
+  interface Button extends SimpleObject
   {
-    void eat();
+
+    final String NAME = "Submit";
+    public void onPress();
+    protected void onPress();
+    void onPress();
+    private void onPress();
+
+    protected String onPress(Object o);
+    String onPress(Object o);
+    private String onPress(Object o);
+
   }
 }
