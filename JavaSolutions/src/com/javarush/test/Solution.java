@@ -1,11 +1,15 @@
 package com.javarush.test;
 
+import java.awt.*;
+
 /**
  * Created by Homosapiens on 19.10.2016.
  */
-/* Интерфейс Updatable в классе Screen
-level13.lesson11.home08;
-Реализовать интерфейс Updatable в классе Screen.
+/* Один метод в классе
+level13.lesson11.home09;
+1. Унаследовать Fox от интерфейса Animal.
+2. Поменяй код так, чтобы в классе Fox был только один метод - getName.
+3. Методы удалять нельзя!
 */
 
 public class Solution
@@ -14,19 +18,20 @@ public class Solution
   {
   }
 
-  interface Selectable
+  public interface Animal
   {
-    void onSelect();
+    Color getColor();
+
+    Integer getAge();
   }
 
-  interface Updatable extends Selectable
+  public static class Fox
   {
-    void refresh();
-  }
-
-  class Screen
-  {
-
+    public String getName()
+    {
+      return "Fox";
+    }
   }
 }
+
 
