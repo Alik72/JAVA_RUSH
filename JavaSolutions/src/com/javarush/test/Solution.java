@@ -2,40 +2,38 @@ package com.javarush.test;
 
 import java.awt.*;
 
-/**
- * Created by Homosapiens on 19.10.2016.
- */
-/* Компиляция программы
-level 13.lesson11.home10;
-1. Исправь классы Fox и BigFox так, чтобы программа компилировалась. Задача не предполагает создания экземпляров базового класса.
-2. Метод main менять нельзя.
+/* Bingo
+level 14.lesson02.task01;
+Исправь строчку 'Object o = new Pet();' в методе main так, чтобы программа вывела "Bingo!"
 */
 
 public class Solution
 {
-
-  public static void main(String[] args) throws Exception
+  public static void main(String[] args)
   {
-    Fox bigFox = new BigFox();
-    System.out.println(bigFox.getName());
-    System.out.println(bigFox.getColor());
+    Object o = new Pet();
+    boolean isCat = o instanceof Cat;
+    boolean isTiger = o instanceof Tiger;
+    boolean isPet = o instanceof Pet;
+
+    printResults(isCat, isTiger, isPet);
   }
 
-  public interface Animal
+  private static void printResults(boolean cat, boolean tiger, boolean pet)
   {
-    Color getColor();
+    if (cat && tiger && pet) System.out.println("Bingo!");
   }
 
-  public static class Fox implements Animal
+  static class Pet
   {
-    public String getName() {
-      return "Fox";
-    }
   }
 
-  public abstract static class BigFox
+  static class Cat extends Pet
   {
+  }
 
+  static class Tiger extends Cat
+  {
   }
 
 }
