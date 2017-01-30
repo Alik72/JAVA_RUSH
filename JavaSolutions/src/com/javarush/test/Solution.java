@@ -2,35 +2,52 @@ package com.javarush.test;
 
 import java.awt.*;
 
-/* Bingo-2
-level 14.lesson02.task02;
-Исправь строчку 'Cat o = new Cat();' так, чтобы программа вывела "Bingo!"
+/* Building и School
+level 14.lesson04.task01;
+1. Расставь правильно наследование между Building(здание) и School(здание школы).
+2. Подумай, объект какого класса должны возвращать методы getSchool и getBuilding.
+3. Измени null на объект класса Building или School.
 */
 
 public class Solution
 {
   public static void main(String[] args)
   {
-    Cat o = new Cat();
+    Building school = getSchool();
+    Building shop = getBuilding();
 
-    boolean isCat = o instanceof Cat;
-    boolean isMoveable = o instanceof Moveable;
-    boolean isTom = o instanceof TomCat;
-
-    if (isCat && isMoveable && isTom) System.out.println("Bingo!");
-
+    System.out.println(school);
+    System.out.println(shop);
   }
 
-  interface Moveable
+  public static Building getSchool()
   {
+    //измените null на объект класса Building или School
+    return null;
   }
 
-  static class Cat
+  public static Building getBuilding()
   {
+    //измените null на объект класса Building или School
+    return null;
   }
 
-  static class TomCat extends Cat implements Moveable
+  static class School /*Add your code here*/
   {
+    @Override
+    public String toString()
+    {
+      return "School";
+    }
+  }
 
+  static class Building /*Add your code here*/
+  {
+    @Override
+    public String toString()
+    {
+      return "Building";
+    }
   }
 }
+
