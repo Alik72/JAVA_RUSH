@@ -2,38 +2,35 @@ package com.javarush.test;
 
 import java.awt.*;
 
-/* Bingo
-level 14.lesson02.task01;
-Исправь строчку 'Object o = new Pet();' в методе main так, чтобы программа вывела "Bingo!"
+/* Bingo-2
+level 14.lesson02.task02;
+Исправь строчку 'Cat o = new Cat();' так, чтобы программа вывела "Bingo!"
 */
 
 public class Solution
 {
   public static void main(String[] args)
   {
-    Object o = new Pet();
+    Cat o = new Cat();
+
     boolean isCat = o instanceof Cat;
-    boolean isTiger = o instanceof Tiger;
-    boolean isPet = o instanceof Pet;
+    boolean isMoveable = o instanceof Moveable;
+    boolean isTom = o instanceof TomCat;
 
-    printResults(isCat, isTiger, isPet);
+    if (isCat && isMoveable && isTom) System.out.println("Bingo!");
+
   }
 
-  private static void printResults(boolean cat, boolean tiger, boolean pet)
-  {
-    if (cat && tiger && pet) System.out.println("Bingo!");
-  }
-
-  static class Pet
+  interface Moveable
   {
   }
 
-  static class Cat extends Pet
+  static class Cat
   {
   }
 
-  static class Tiger extends Cat
+  static class TomCat extends Cat implements Moveable
   {
-  }
 
+  }
 }
