@@ -2,48 +2,42 @@ package com.javarush.test;
 
 import java.awt.*;
 
-/* Food
-level 14.lesson04.task03;
-1. Реализовать интерфейс Selectable в классе Food.
-2. Метод onSelect() должен писать в консоль "food is selected".
-3. Подумай, какие методы можно вызвать для переменной food и какие для selectable.
-4. В методе foodMethods вызови методы onSelect, eat, если это возможно.
-5. В методе selectableMethods вызови методы onSelect, eat, если это возможно.
-6. Явное приведение типов не использовать.
+/* Без ошибок
+level 14.lesson04.task04;
+Инициализировать объект obj таким классом, чтобы метод main выполнился без ошибок.
 */
 
 public class Solution
 {
   public static void main(String[] args)
   {
-    Food food = new Food();
-    Selectable selectable = new Food();
-    Food newFood = (Food) selectable;
+    Object obj = //Add your code here
 
-    foodMethods(food);
-    selectableMethods(selectable);
+            Mouse mouse = (Mouse) obj;
+    GreyMouse greyMouse = (GreyMouse) mouse;
+    Jerry jerry = (Jerry) greyMouse;
+
+    printClasses(obj, mouse, greyMouse, jerry);
+
   }
 
-  public static void foodMethods(Food food)
+  public static void printClasses(Object obj, Mouse mouse, GreyMouse greyMouse, Jerry jerry)
   {
-    //тут добавьте вызов методов для переменной food
+    System.out.println(jerry.getClass().getSimpleName());
+    System.out.println(greyMouse.getClass().getSimpleName());
+    System.out.println(mouse.getClass().getSimpleName());
+    System.out.println(obj.getClass().getSimpleName());
   }
 
-  public static void selectableMethods(Selectable selectable)
+  static class Mouse
   {
-    //тут добавьте вызов методов для переменной selectable
   }
 
-  interface Selectable
+  static class GreyMouse extends Mouse
   {
-    void onSelect();
   }
 
-  static class Food
+  static class Jerry extends GreyMouse
   {
-    public void eat()
-    {
-      System.out.println("food is eaten");
-    }
   }
 }
