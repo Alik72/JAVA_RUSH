@@ -2,89 +2,48 @@ package com.javarush.test;
 
 import java.awt.*;
 
-/* Коты
-level 14.lesson04.task02;
-1. Считывать строки(параметры) с консоли, пока пользователь не введет пустую строку(Enter).
-2. Каждый параметр соответствует имени кота.
-Для каждого параметра:
-3. Создать объект cat класса Cat, который равен коту из getCatByKey(String параметр).
-4. Вывести на экран cat.toString().
+/* Food
+level 14.lesson04.task03;
+1. Реализовать интерфейс Selectable в классе Food.
+2. Метод onSelect() должен писать в консоль "food is selected".
+3. Подумай, какие методы можно вызвать для переменной food и какие для selectable.
+4. В методе foodMethods вызови методы onSelect, eat, если это возможно.
+5. В методе selectableMethods вызови методы onSelect, eat, если это возможно.
+6. Явное приведение типов не использовать.
 */
 
 public class Solution
 {
-  public static void main(String[] args) throws Exception
+  public static void main(String[] args)
   {
-    //Add your code here
+    Food food = new Food();
+    Selectable selectable = new Food();
+    Food newFood = (Food) selectable;
+
+    foodMethods(food);
+    selectableMethods(selectable);
   }
 
-  static class CatFactory
+  public static void foodMethods(Food food)
   {
-
-    static Cat getCatByKey(String key)
-    {
-      Cat cat = null;
-      if ("vaska".equals(key))
-      {
-        cat = new MaleCat("Василий");
-      } else if ("murka".equals(key))
-      {
-        cat = new FemaleCat("Мурочка");
-      } else if ("kiska".equals(key))
-      {
-        cat = new FemaleCat("Кисюлька");
-      } else
-      {
-        cat = new Cat(key);
-      }
-
-      return cat;
-    }
+    //тут добавьте вызов методов для переменной food
   }
 
-  static class Cat
+  public static void selectableMethods(Selectable selectable)
   {
-    private String name;
-
-    protected Cat(String name)
-    {
-      this.name = name;
-    }
-
-    public String getName()
-    {
-      return this.name;
-    }
-
-    public String toString()
-    {
-      return "Я уличный кот " + getName();
-    }
+    //тут добавьте вызов методов для переменной selectable
   }
 
-  static class MaleCat extends Cat
+  interface Selectable
   {
-    MaleCat(String name)
-    {
-      super(name);
-    }
-
-    public String toString()
-    {
-      return "Я - солидный кошак по имени " + getName();
-    }
+    void onSelect();
   }
 
-  static class FemaleCat extends Cat
+  static class Food
   {
-    FemaleCat(String name)
+    public void eat()
     {
-      super(name);
-    }
-
-    public String toString()
-    {
-      return "Я - милая кошечка по имени " + getName();
+      System.out.println("food is eaten");
     }
   }
 }
