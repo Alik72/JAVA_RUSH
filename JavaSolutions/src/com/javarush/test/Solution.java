@@ -2,42 +2,57 @@ package com.javarush.test;
 
 import java.awt.*;
 
-/* Без ошибок
-level 14.lesson04.task04;
-Инициализировать объект obj таким классом, чтобы метод main выполнился без ошибок.
+/* Player and Dancer
+level 14.lesson04.task05;
+1. Подумать, что делает программа.
+2. Изменить метод haveRest так, чтобы он вызывал метод
+- play, если person имеет тип Player
+- dance, если person имеет тип Dancer
 */
 
 public class Solution
 {
-  public static void main(String[] args)
+  public static void main(String[] args) throws Exception
   {
-    Object obj = //Add your code here
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-            Mouse mouse = (Mouse) obj;
-    GreyMouse greyMouse = (GreyMouse) mouse;
-    Jerry jerry = (Jerry) greyMouse;
-
-    printClasses(obj, mouse, greyMouse, jerry);
-
+    Person person = null;
+    String key;
+    while (!(key = reader.readLine()).equals("exit"))
+    {
+      if ("player".equals(key))
+      {
+        person = new Player();
+      } else if ("dancer".equals(key))
+      {
+        person = new Dancer();
+      }
+      haveRest(person);
+    }
   }
 
-  public static void printClasses(Object obj, Mouse mouse, GreyMouse greyMouse, Jerry jerry)
+  public static void haveRest(Person person)
   {
-    System.out.println(jerry.getClass().getSimpleName());
-    System.out.println(greyMouse.getClass().getSimpleName());
-    System.out.println(mouse.getClass().getSimpleName());
-    System.out.println(obj.getClass().getSimpleName());
+    //Add your code here
   }
 
-  static class Mouse
+  interface Person
   {
   }
 
-  static class GreyMouse extends Mouse
+  static class Player implements Person
   {
+    void play()
+    {
+      System.out.println("playing");
+    }
   }
 
-  static class Jerry extends GreyMouse
+  static class Dancer implements Person
   {
+    void dance()
+    {
+      System.out.println("dancing");
+    }
   }
 }
