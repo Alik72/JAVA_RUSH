@@ -2,48 +2,25 @@ package com.javarush.test;
 
 import java.awt.*;
 
-/* Куриная фабрика
-level 14.lesson06.home01;
-Написать Фабрику(Factory) по производству кур(Hen)
-1. Создать класс Hen
-1.1. Сделать его абстрактным
-1.2. Добавить в класс абстрактный метод  int getCountOfEggsPerMonth()
-1.3. Добавить в класс метод String getDescription(), который возвращает строку "Я курица."
-
-2. Создать класс RussianHen, который наследуется от Hen
-3. Создать класс UkrainianHen, который наследуется от Hen
-4. Создать класс MoldovanHen, который наследуется от Hen
-5. Создать класс BelarusianHen, который наследуется от Hen
-
-6. В каждом из четырех последних классов написать свою реализацию метода getCountOfEggsPerMonth.
-Методы должны возвращать количество яиц в месяц от данного типа куриц.
-
-7. В каждом из четырех последних классов написать свою реализацию метода getDescription.
-Методы должны возвращать строку вида:
-<getDescription() родительского класса>  + <" Моя страна - Sssss. Я несу N яиц в месяц.">
-где Sssss - название страны
-где N - количество яиц в месяц
-
-8. В классе HenFactory реализовать метод getHen, который возвращает соответствующую стране породу кур
-9. Все созданные вами классы должны быть в отдельных файлах
+/* Мосты
+level14.lesson08.home01;
+1. Создать интерфейс Bridge с методом int getCarsCount().
+2. Создать классы WaterBridge и SuspensionBridge, которые реализуют интерфейс Bridge.
+3. Метод getCarsCount() должен возвращать любое захардкоженое значение типа int
+4. Метод getCarsCount() должен возвращать различные значения для различных классов
+5. В классе Solution создать публичный метод println(Bridge bridge).
+6. В методе println вывести на консоль значение getCarsCount() для объекта bridge.
+7. Каждый класс и интерфейс должны быть в отдельных файлах.
 */
 
 public class Solution
 {
   public static void main(String[] args)
   {
-    Hen hen = HenFactory.getHen(Country.BELARUS);
-    hen.getCountOfEggsPerMonth();
+    println(new WaterBridge());
+    println(new SuspensionBridge());
   }
 
-  static class HenFactory {
-
-    static Hen getHen(String country) {
-      Hen hen = null;
-      //add your code here
-      return hen;
-    }
-  }
-
-
+  //add println method here
 }
+
