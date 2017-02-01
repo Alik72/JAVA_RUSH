@@ -2,25 +2,33 @@ package com.javarush.test;
 
 import java.awt.*;
 
-/* Мосты
-level14.lesson08.home01;
-1. Создать интерфейс Bridge с методом int getCarsCount().
-2. Создать классы WaterBridge и SuspensionBridge, которые реализуют интерфейс Bridge.
-3. Метод getCarsCount() должен возвращать любое захардкоженое значение типа int
-4. Метод getCarsCount() должен возвращать различные значения для различных классов
-5. В классе Solution создать публичный метод println(Bridge bridge).
-6. В методе println вывести на консоль значение getCarsCount() для объекта bridge.
-7. Каждый класс и интерфейс должны быть в отдельных файлах.
+/* Дегустация вин
+level 14.lesson08.home02;
+1. Создать абстрактный класс Drink с реализованным методом public void taste(), который выводит в консоль "Вкусно"
+2. Создать класс Wine, который наследуется от Drink, с реализованным методом public String getHolidayName(), который возвращает строку "День рождения"
+3. Создать класс BubblyWine, который наследуется от Wine, с реализованным методом public String getHolidayName(), который возвращает строку "Новый год"
+4. Написать реализацию методов getDeliciousDrink, getWine, getBubblyWine
+5. Каждый класс и интерфейс должны быть в отдельных файлах
+6. Метод main менять нельзя!
 */
 
-public class Solution
-{
-  public static void main(String[] args)
-  {
-    println(new WaterBridge());
-    println(new SuspensionBridge());
+public class Solution {
+  public static void main(String[] args) {
+    getDeliciousDrink().taste();
+    System.out.println(getWine().getHolidayName());
+    System.out.println(getBubblyWine().getHolidayName());
+    System.out.println(getWine().getHolidayName());
   }
 
-  //add println method here
-}
+  public static Drink getDeliciousDrink() {
 
+  }
+
+  public static Wine getWine() {
+
+  }
+
+  public static Wine getBubblyWine() {
+
+  }
+}
