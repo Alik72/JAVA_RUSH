@@ -1,35 +1,14 @@
-public interface Person
+public class Person
 {
-    public static class User implements Person
-    {
-        void live()
-        {
-            System.out.println("Usually I just live");
-        }
-    }
+    private String name;
+    private String namePadezh;
 
-    public static class Looser implements Person
+    public Person(String name, String namePadezh)
     {
-        void doNothing()
-        {
-            System.out.println("Usually I do nothing");
-        }
+        this.name = name;
+        this.namePadezh = namePadezh;
     }
+    public pull(Person person){
 
-    public static class Coder implements Person
-    {
-        void coding()
-        {
-            System.out.println("Usually I create code");
-        }
     }
-
-    public static class Proger implements Person
-    {
-        void enjoy()
-        {
-            System.out.println("Wonderful life!");
-        }
-    }
-
 }
