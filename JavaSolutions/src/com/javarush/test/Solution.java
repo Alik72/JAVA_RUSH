@@ -1,43 +1,28 @@
 package com.javarush.test;
 
-import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 
-/* User, Looser, Coder and Proger
-level 14.lesson08.home03;
-1. Ввести [в цикле] с клавиатуры несколько строк (ключей).
-Строки(ключи) могут быть такими: "user", "looser", "coder", "proger".
-Ввод окончен, когда строка не совпадает ни с одной из выше указанных.
-
-2. Для каждой введенной строки нужно:
-2.1. Создать соответствующий объект [см Person.java], например, для строки "user" нужно создать объект класса User.
-2.2. Передать этот объект в метод doWork.
-
-3. Написать реализацию метода doWork, который:
-3.1. Вызывает метод live() у переданного обекта, если этот объект (person) имеет тип User.
-3.2. Вызывает метод doNothing(), если person имеет тип Looser.
-3.3. Вызывает метод coding(), если person имеет тип Coder.
-3.4. Вызывает метод enjoy(), если person имеет тип Proger.
+/* Репка
+level 13.lesson11.bonus02;
+Сказка Репка:
+1. Реализовать интерфейс RepkaItem в классе Person.
+2. В классе Person реализовать метод pull(Person person), который выводит фразу типа '<name> за <person>'. Пример:
+Бабка за Дедку
+Дедка за Репку
+3. Исправить логическую ошибку цикла в методе tell класса RepkaStory.
+4. Выполнить метод main и наслаждаться сказкой!
 */
 
 public class Solution
 {
-  public static void main(String[] args) throws Exception
+  public static void main(String[] args)
   {
-    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    Person person = null;
-    String key = null;
-
-    //тут цикл по чтению ключей, пункт 1
-    {
-      //создаем объект, пункт 2
-
-      doWork(person); //вызываем doWork
-
-    }
-  }
-
-  public static void doWork(Person person)
-  {
-    // пункт 3
+    List<Person> plot = new ArrayList<Person>();
+    plot.add(new Person("Репка", "Репку"));
+    plot.add(new Person("Дедка", "Дедку"));
+    plot.add(new Person("Бабка", "Бабку"));
+    plot.add(new Person("Внучка", "Внучку"));
+    RepkaStory.tell(plot);
   }
 }
