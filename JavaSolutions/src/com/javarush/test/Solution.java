@@ -1,43 +1,46 @@
 package com.javarush.test;
-/* ООП - машинки
-level 15.lesson02.task03;
-1. Для вывода использовать можно только переменные из класса Constants.
-2. В классе Ferrari реализуйте метод printlnDesire, чтобы он выводил на экран "Я хочу ездить на Феррари".
-3. В классе Lanos реализуйте метод printlnDesire, чтобы он выводил на экран "Я хочу ездить на Ланосе".
-4. Создайте public static класс LuxuriousCar(РоскошнаяМашина).
-5. Создайте public static класс CheapCar(ДешеваяМашина).
-6. Унаследуйте Ferrari и Lanos от CheapCar и LuxuriousCar, подумайте, какой класс для кого.
-7. В классе LuxuriousCar реализуйте метод printlnDesire, чтобы он выводил на экран "Я хочу ездить на роскошной машине".
-8. В классе CheapCar реализуйте метод printlnDesire, чтобы он выводил на экран "Я хочу ездить на дешевой машине".
-9. В класах LuxuriousCar и CheapCar для метода printlnDesire расставьте различными способами модификаторы доступа так,
-чтобы в классах Ferrari и Lanos выполнялось расширение видимости.
+/* ООП - книги
+level 15.lesson02.task04;
+1. Создайте public static класс MarkTwainBook, который наследуется от Book. Имя автора [Mark Twain]. Параметр конструктора - имя книги.
+2. В классе MarkTwainBook реализуйте все абстрактные методы.
+3. Для метода getBook расширьте тип возвращаемого результата.
+4. Создайте по аналогии AgathaChristieBook. Имя автора [Agatha Christie].
+5. В классе Book реализуйте тело метода getOutputByBookType так, чтобы он возвращал:
+5.1. agathaChristieOutput для книг Агаты Кристи;
+5.2. markTwainOutput для книг Марка Твена.
 */
 
 public class Solution {
   public static void main(String[] args) {
-    new Solution.LuxuriousCar().printlnDesire();
-    new Solution.CheapCar().printlnDesire();
-    new Solution.Ferrari().printlnDesire();
-    new Solution.Lanos().printlnDesire();
+    List<Book> books = new LinkedList<Book>();
+    books.add(new MarkTwainBook("Tom Sawyer"));
+    books.add(new AgathaChristieBook("Hercule Poirot"));
+    System.out.println(books);
   }
 
-  public static class Ferrari {
-    public void printlnDesire() {
-      //add your code here
+  public abstract static class Book {
+    private String author;
+
+    public Book(String author) {
+      this.author = author;
     }
-  }
 
-  public static class Lanos {
-    public void printlnDesire() {
-      //add your code here
+    public abstract Book getBook();
+
+    public abstract String getName();
+
+    private String getOutputByBookType() {
+      String agathaChristieOutput = author + ", " + getBook().getName() + " is a detective";
+      String markTwainOutput = getBook().getName() + " book was written by " + author;
+
+      String output = "output";
+      //Add your code here
+
+      return output;
     }
-  }
 
-  public static class Constants {
-    public static String WANT_STRING = "Я хочу ездить на ";
-    public static String LUXURIOUS_CAR = "роскошной машине";
-    public static String CHEAP_CAR = "дешевой машине";
-    public static String FERRARY_NAME = "Феррари";
-    public static String LANOS_NAME = "Ланосе";
+    public String toString() {
+      return getOutputByBookType();
+    }
   }
 }
