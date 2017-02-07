@@ -1,46 +1,70 @@
 package com.javarush.test;
-/* ООП - книги
-level 15.lesson02.task04;
-1. Создайте public static класс MarkTwainBook, который наследуется от Book. Имя автора [Mark Twain]. Параметр конструктора - имя книги.
-2. В классе MarkTwainBook реализуйте все абстрактные методы.
-3. Для метода getBook расширьте тип возвращаемого результата.
-4. Создайте по аналогии AgathaChristieBook. Имя автора [Agatha Christie].
-5. В классе Book реализуйте тело метода getOutputByBookType так, чтобы он возвращал:
-5.1. agathaChristieOutput для книг Агаты Кристи;
-5.2. markTwainOutput для книг Марка Твена.
+/* ООП - исправь ошибки в наследовании
+level 15.lesson02.task05;
+Исправь метод containsBones и всю связанную с ним логику так, чтобы:
+1. Поведение программы осталось прежним, т.е. она должна выдавать то же самое, что и выдает сейчас
+2. Метод containsBones должен возвращать тип Object и значение "Yes" вместо true, "No" вместо false
 */
 
 public class Solution {
-  public static void main(String[] args) {
-    List<Book> books = new LinkedList<Book>();
-    books.add(new MarkTwainBook("Tom Sawyer"));
-    books.add(new AgathaChristieBook("Hercule Poirot"));
-    System.out.println(books);
+  public static interface Alive {
+    boolean containsBones();
   }
 
-  public abstract static class Book {
-    private String author;
+  public static class BodyPart implements Alive {
+    private String name;
 
-    public Book(String author) {
-      this.author = author;
+    public BodyPart(String name) {
+      this.name = name;
     }
 
-    public abstract Book getBook();
-
-    public abstract String getName();
-
-    private String getOutputByBookType() {
-      String agathaChristieOutput = author + ", " + getBook().getName() + " is a detective";
-      String markTwainOutput = getBook().getName() + " book was written by " + author;
-
-      String output = "output";
-      //Add your code here
-
-      return output;
+    public boolean containsBones() {
+      return true;
     }
 
     public String toString() {
-      return getOutputByBookType();
+      return containsBones() ? name + " содержит кости" : name + " не содержит кости";
     }
+  }
+
+  public static class Finger extends BodyPart {
+    private boolean isFoot;
+    public Finger(String name, boolean isFoot) {
+      super(name);
+      this.isFoot = isFoot;
+    }
+
+    public boolean containsBones() {
+      return super.containsBones() && !isFoot;
+    }
+  }
+  public static void main(String[] args)
+  {
+    printlnFingers();
+    printlnBodyParts();
+    printlnAlives();
+  }
+
+  private static void printlnAlives() {
+    System.out.println(new BodyPart("Рука").containsBones());
+  }
+
+  private static void printlnBodyParts() {
+    List<BodyPart> bodyParts = new ArrayList<BodyPart>(5);
+    bodyParts.add(new BodyPart("Рука"));
+    bodyParts.add(new BodyPart("Нога"));
+    bodyParts.add(new BodyPart("Голова"));
+    bodyParts.add(new BodyPart("Тело"));
+    System.out.println(bodyParts.toString());
+  }
+
+  private static void printlnFingers() {
+    List<Finger> fingers = new ArrayList<Finger>(5);
+    fingers.add(new Finger("Большой", true));
+    fingers.add(new Finger("Указательный", true));
+    fingers.add(new Finger("Средний", true));
+    fingers.add(new Finger("Безымянный", false));
+    fingers.add(new Finger("Мизинец", true));
+    System.out.println(fingers.toString());
   }
 }
