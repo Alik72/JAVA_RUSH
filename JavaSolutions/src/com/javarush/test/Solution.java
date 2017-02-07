@@ -1,27 +1,36 @@
 package com.javarush.test;
-/* Все лишнее - прочь!
-level 15.lesson04.task05;
-Убрать в методе main лишние строки, для которых метод add нереализован.
+/* Максимально простой код 1
+level 15.lesson06.task01;
+Упрости код - убери все наследования и реализации, которые и так будут добавлены автоматически при компиляции
+PS: Взаимосвязь между объектами me и zapp - Has-a (использует): http://ru.wikipedia.org/wiki/Has-a
 */
 
 public class Solution {
   public static void main(String[] args) {
-    add((short) 1, 2f);
-    add(1, 2);
-    add(2d, 2);
-    add("1",2d);
-    add((byte) 1, 2d);
+    JuniorJavaDev me = new JuniorJavaDev();
+    System.out.println(me.askHubert("What do you think about level15.lesson06.task01?"));
+    System.out.println(me.askZapp("When will be the next update?"));
   }
 
-  public static void add(int i, int j) {
-    System.out.println("Integer addition");
+  public interface SpecificSerializable extends Serializable {
   }
 
-  public static void add(int i, double j) {
-    System.out.println("Integer and double addition");
+  public static class JavaDev extends Object implements SpecificSerializable {
+    String answerQuestion(String question) {
+      return String.format("I'll be thinking of [%s]", question);
+    }
   }
 
-  public static void add(double i, double j) {
-    System.out.println("Double addition");
+  public static class JuniorJavaDev extends Object, JavaDev implements SpecificSerializable {
+    JavaDev zapp = new JavaDev();
+    JavaDev hubert = new JavaDev();
+
+    String askZapp(String question) {
+      return zapp.answerQuestion(question);
+    }
+
+    String askHubert(String question) {
+      return hubert.answerQuestion(question);
+    }
   }
 }
