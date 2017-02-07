@@ -1,33 +1,27 @@
 package com.javarush.test;
-/* Мужчина или женщина?
-level 15.lesson04.task04;
-1. В методе main создать 2 человека man и woman. man с типом Man, woman с типом Woman.
-2. Изменить метод printName так, чтобы он выполнялся для man и woman.
-3. Реализация метода printName должна быть одна.
+/* Все лишнее - прочь!
+level 15.lesson04.task05;
+Убрать в методе main лишние строки, для которых метод add нереализован.
 */
 
 public class Solution {
   public static void main(String[] args) {
-    man = new Man();
-    woman = new Woman();
-
-    printName(man);
-    printName(woman);
+    add((short) 1, 2f);
+    add(1, 2);
+    add(2d, 2);
+    add("1",2d);
+    add((byte) 1, 2d);
   }
 
-  public static void printName(Man man) {
-
+  public static void add(int i, int j) {
+    System.out.println("Integer addition");
   }
 
-  public static class Human {
-
+  public static void add(int i, double j) {
+    System.out.println("Integer and double addition");
   }
 
-  public static class Man extends Human {
-
-  }
-
-  public static class Woman extends Human {
-
+  public static void add(double i, double j) {
+    System.out.println("Double addition");
   }
 }
