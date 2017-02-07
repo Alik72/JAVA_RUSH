@@ -1,47 +1,65 @@
 package com.javarush.test;
-/* Валюты
-level14.lesson08.home09;
-1. Реализуй метод getAmount в классе Money:
-1.1. Подумай, какого типа нужно создать приватную переменную, если метод getAmount будет ее возвращать.
-1.2. Создай приватную переменную этого типа и верни ее в методе getAmount.
-1.3. В конструкторе присвой ей значение, полученное параметром.
-2. В отдельном файле создай класс Hrivna.
-3. Наследуй класс Hrivna от класса Money.
-4. В классе Hrivna реализуй метод getCurrencyName, который возвращает "HRN".
-5. В отдельном файле создай класс USD.
-6. Наследуй класс USD от класса Money.
-7. В классе USD реализуй метод getCurrencyName, который возвращает "USD".
-8. Подумай, объекты каких классов можно добавить в список(лист) allMoney.
-9. Добавь в конструктор класса Person заполнение листа allMoney объектами всех возможных классов.
+/* Исправить 4 ошибки
+level14.lesson08.home10;
+Исправить 4 ошибки в конструкторе NotIncapsulatedClass и отрефактори код
+1. В класе NotIncapsulatedClass создать private методы initList(List<Number> list), printListValues, processCastedObjects.
+2. Метод initList должен заполнять значениями входящий параметр list:
+- найди нужный блок кода в конструкторе, в котором list заполняется значениями
+- перенеси его в метод initList
+- верни заполненный list.
+3. Метод printListValues должен принимать параметр list и вывести в консоль все элементы из списка list:
+- метод ничего не возвращает
+- найди нужный блок кода в конструкторе, в котором в цикле из списка list выводятся в консоль все значения
+- перенеси его в метод printListValues
+- исправь 2 ошибки в этом методе.
+4. Метод processCastedObjects:
+- входящий параметр метода имеет тип List<Number> list
+- метод ничего не возвращает
+- найди нужный блок кода в конструкторе, в котором в цикле для каждого объекта из списка list проверяется его тип
+- перенеси этот блок в метод processCastedObjects
+- исправь 2 ошибки в этом методе
+- учти, что для объекта типа Float нужно вывести "Is float value defined? " + [Float_object].isNaN()
+- учти, что для объекта типа Double нужно вывести "Is double value infinite? " + [Double_object].isInfinite().
 */
 
 public class Solution
 {
   public static void main(String[] args)
   {
-    Person ivan = new Person("Иван");
-    for (Money money : ivan.getAllMoney())
-    {
-      System.out.println(ivan.name + " имеет заначку в размере " + money.getAmount() + " " + money.getCurrencyName());
-    }
+    new NotIncapsulatedClass();
   }
 
-  static class Person
+  public static class NotIncapsulatedClass
   {
-    public String name;
-
-    Person(String name)
+    public NotIncapsulatedClass()
     {
-      this.name = name;
-      this.allMoney = new ArrayList<Money>();
-      //Add your code here
-    }
+      List<Number> list = new LinkedList<Number>();
+      //1
+      list.add(new Double(1000f));
+      list.add(new Double("123e-445632"));
+      list.add(new Float(-90 / -3));
+      list.remove(new Double("123e-445632"));
 
-    private List<Money> allMoney;
+      //2 - Исправь 2 ошибки
+      for (int i = 0; i <= list.size(); i--)
+      {
+        System.out.println(list.get(i));
+      }
 
-    public List<Money> getAllMoney()
-    {
-      return allMoney;
+      //3
+      for (Number object : list)
+      {
+        //Исправь 2 ошибки
+        if (object instanceof Float)
+        {
+          Double a = (Double) object;
+          System.out.println("Is float value defined? " + a.isNaN());
+        } else if (object instanceof Double)
+        {
+          Float a = (Float) object;
+          System.out.println("Is double value infinite? " + a.isInfinite());
+        }
+      }
     }
   }
 }
