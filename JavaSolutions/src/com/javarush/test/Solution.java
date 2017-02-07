@@ -1,25 +1,32 @@
 package com.javarush.test;
-/* ООП - Перегрузка
-level 15.lesson04.task02;
-Перегрузите метод printMatrix 8 различными способами. В итоге должно получиться 10 различных методов printMatrix.
+/* ООП - Перегрузка - убираем лишнее
+level 15.lesson04.task03;
+1. Подумайте, какая из реализаций метода print будет вызвана.
+2. Удалите все лишние реализации метода print.
 */
 
 public class Solution {
   public static void main(String[] args) {
-    printMatrix(2, 3, "8");
+    print(1);
   }
 
-  public static void printMatrix(int m, int n, String value) {
-    System.out.println("Заполняем объектами String");
-    printMatrix(m, n, (Object) value);
+  public static void print(byte b) {
+    System.out.println("Я буду Java прогером!");
   }
 
-  public static void printMatrix(int m, int n, Object value) {
-    for (int i = 0; i < m; i++) {
-      for (int j = 0; j < n; j++) {
-        System.out.print(value);
-      }
-      System.out.println();
-    }
+  public static void print(double d) {
+    System.out.println("Я буду Java прогером!");
+  }
+
+  public static void print(long l) {
+    System.out.println("Я буду Java прогером!");
+  }
+
+  public static void print(float f) {
+    System.out.println("Я буду Java прогером!");
+  }
+
+  public static void print(char c) {
+    System.out.println("Я буду Java прогером!");
   }
 }
