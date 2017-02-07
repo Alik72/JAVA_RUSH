@@ -1,29 +1,14 @@
 package com.javarush.test;
-/* Максимально простой код 3
-level 15.lesson06.task03;
-Упрости код:
-- убери всё то, что будет генерироваться автоматически при компиляции
-- убери все наследования классов, которые и так будут добавлены автоматически при компиляции
-- убери все конструкторы, которые создаются и добавляются автоматически.
+
+/* Статики 1
+level 15.lesson09.task01;
+В статическом блоке инициализировать labels 5 различными парами.
 */
 
 public class Solution {
+  public static Map<Double, String> labels = new HashMap<Double, String>();
+
   public static void main(String[] args) {
-  }
-
-  public interface Runnable {
-
-  }
-
-  public class Machine extends Object implements Runnable {
-    public Machine() {
-      super();
-    }
-  }
-
-  public class Car extends Machine implements Runnable {
-    public Car() {
-      super();
-    }
+    System.out.println(labels);
   }
 }
