@@ -1,60 +1,70 @@
 package com.javarush.test;
-
-
-/* Клининговый центр
-level 14.lesson08.home07;
-Клининговый центр
-1. Реализовать метод cleanAllApartaments.
-Для каждого объекта из apartaments:
-2. Для однокомнатных квартир (Apt1Room) вызвать метод clean1Room.
-т.е. если объект типа Apt1Room, то вызвать у него метод clean1Room.
-3. Для двухкомнатных квартир (Apt2Room) вызвать метод clean2Rooms
-т.е. если объект типа Apt2Room, то вызвать у него метод clean2Rooms.
-4. Для трехкомнатных квартир (Apt3Room) вызвать метод clean3Rooms
-т.е. если объект типа Apt3Room, то вызвать у него метод clean3Rooms.
+/* Исправление ошибок
+level14.lesson08.home08;
+1. Подумать, как связаны интерфейсы Swimable(способен плавать) и Walkable(способен ходить) с классом OceanAnimal(животное океана).
+2. Расставить правильно наследование интерфейсов и класса OceanAnimal.
+3. Подумать, как могут быть связаны классы  Orca(Косатка), Whale(Кит), Otter(Выдра) с классом OceanAnimal.
+4. Расставить правильно наследование между классами Orca, Whale, Otter и классом OceanAnimal.
+5. Подумать, какой класс должен реализовать интерфейс Walkable и добавить интерфейc этому классу.
+6. Подумать, какое животное еще не умеет плавать и добавить ему интерфейс Swimable.
 */
+
 public class Solution
 {
   public static void main(String[] args)
   {
-    List<Apartament> apartaments = new ArrayList<Apartament>();
-    apartaments.add(new Apt1Room());
-    apartaments.add(new Apt2Room());
-    apartaments.add(new Apt3Room());
-
-    cleanAllApartaments(apartaments);
+/*
+        Swimable animal = new Orca();
+        animal.swim();
+        animal = new Whale();
+        animal.swim();
+        animal = new Otter();
+        animal.swim();
+*/
   }
 
-  public static void cleanAllApartaments(List<Apartament> apartaments)
+  public static void test(Swimable animal)
   {
-    //написать тут вашу реализацию пунктов 1-4
+    animal.swim();
   }
 
-  static interface Apartament
+  static interface Walkable
   {
+    void walk();
   }
 
-  static class Apt1Room implements Apartament
+  static interface Swimable
   {
-    void clean1Room()
+    void swim();
+  }
+
+  static abstract class OceanAnimal
+  {
+    public void swim()
     {
-      System.out.println("1 room is cleaned");
+      OceanAnimal currentAnimal = (OceanAnimal) getCurrentAnimal();
+      currentAnimal.swimming();
     }
+
+    private void swimming()
+    {
+      System.out.println(getCurrentAnimal().getClass().getSimpleName() + " is swimming");
+    }
+
+    abstract Swimable getCurrentAnimal();
   }
 
-  static class Apt2Room implements Apartament
+  static class Orca
   {
-    void clean2Rooms()
-    {
-      System.out.println("2 rooms are cleaned");
-    }
   }
 
-  static class Apt3Room implements Apartament
+  static class Whale
   {
-    void clean3Rooms()
-    {
-      System.out.println("3 rooms are cleaned");
-    }
+
+  }
+
+  static class Otter
+  {
+
   }
 }
