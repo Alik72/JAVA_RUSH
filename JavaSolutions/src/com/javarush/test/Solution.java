@@ -1,70 +1,50 @@
 package com.javarush.test;
-/* ООП - исправь ошибки в наследовании
-level 15.lesson02.task05;
-Исправь метод containsBones и всю связанную с ним логику так, чтобы:
-1. Поведение программы осталось прежним, т.е. она должна выдавать то же самое, что и выдает сейчас
-2. Метод containsBones должен возвращать тип Object и значение "Yes" вместо true, "No" вместо false
+/* Что-то лишнее
+level 15.lesson04.task01;
+1. Программа должна выводить следующее:
+Это double
+Это Object
+Это double
+Это Integer
+Это double
+
+2 Удалите реализации всех лишних методов
 */
 
 public class Solution {
-  public static interface Alive {
-    boolean containsBones();
+  public static void main(String[] args) {
+    print((short) 1);
+    print((Number) 1);
+    print(1);
+    print((Integer) 1);
+    print((int) 1);
   }
 
-  public static class BodyPart implements Alive {
-    private String name;
-
-    public BodyPart(String name) {
-      this.name = name;
-    }
-
-    public boolean containsBones() {
-      return true;
-    }
-
-    public String toString() {
-      return containsBones() ? name + " содержит кости" : name + " не содержит кости";
-    }
+  public static void print(Integer i) {
+    System.out.println("Это Integer");
   }
 
-  public static class Finger extends BodyPart {
-    private boolean isFoot;
-    public Finger(String name, boolean isFoot) {
-      super(name);
-      this.isFoot = isFoot;
-    }
-
-    public boolean containsBones() {
-      return super.containsBones() && !isFoot;
-    }
-  }
-  public static void main(String[] args)
-  {
-    printlnFingers();
-    printlnBodyParts();
-    printlnAlives();
+  public static void print(int i) {
+    System.out.println("Это Integer");
   }
 
-  private static void printlnAlives() {
-    System.out.println(new BodyPart("Рука").containsBones());
+  public static void print(Short i) {
+    System.out.println("Это Object");
   }
 
-  private static void printlnBodyParts() {
-    List<BodyPart> bodyParts = new ArrayList<BodyPart>(5);
-    bodyParts.add(new BodyPart("Рука"));
-    bodyParts.add(new BodyPart("Нога"));
-    bodyParts.add(new BodyPart("Голова"));
-    bodyParts.add(new BodyPart("Тело"));
-    System.out.println(bodyParts.toString());
+  public static void print(Object i) {
+    System.out.println("Это Object");
   }
 
-  private static void printlnFingers() {
-    List<Finger> fingers = new ArrayList<Finger>(5);
-    fingers.add(new Finger("Большой", true));
-    fingers.add(new Finger("Указательный", true));
-    fingers.add(new Finger("Средний", true));
-    fingers.add(new Finger("Безымянный", false));
-    fingers.add(new Finger("Мизинец", true));
-    System.out.println(fingers.toString());
+  public static void print(double i) {
+    System.out.println("Это double");
+  }
+
+  public static void print(Double i) {
+    System.out.println("Это double");
+  }
+
+  public static void print(float i) {
+    System.out.println("Это Double");
   }
 }
