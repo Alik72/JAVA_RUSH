@@ -1,36 +1,42 @@
 package com.javarush.test;
-/* Максимально простой код 1
-level 15.lesson06.task01;
-Упрости код - убери все наследования и реализации, которые и так будут добавлены автоматически при компиляции
-PS: Взаимосвязь между объектами me и zapp - Has-a (использует): http://ru.wikipedia.org/wiki/Has-a
+/* Максимально простой код 2
+level 15.lesson06.task02;
+Посмотри, что, связанное с конструкторами, может быть добавлено при компиляции, но в этой программе уже присутствует.
+Упрости код - удали все конструкторы и вызовы конструкторов супер-классов, которые создаются и добавляются автоматически.
+
+PS: Взаимосвязь между объектами классов NakedCat и NormalCat, SiamCat - Is-a (наследование): http://en.wikipedia.org/wiki/Is-a
+http://cs7002.vk.me/c7007/v7007577/1411a/_dAiEola310.jpg
 */
 
 public class Solution {
   public static void main(String[] args) {
-    JuniorJavaDev me = new JuniorJavaDev();
-    System.out.println(me.askHubert("What do you think about level15.lesson06.task01?"));
-    System.out.println(me.askZapp("When will be the next update?"));
+    SiamCat simka = new SiamCat("Simka");
+    NakedCat nakedSimka = simka.shave();
   }
 
-  public interface SpecificSerializable extends Serializable {
-  }
-
-  public static class JavaDev extends Object implements SpecificSerializable {
-    String answerQuestion(String question) {
-      return String.format("I'll be thinking of [%s]", question);
+  public static class NakedCat {
+    public NakedCat() {
+      super();
     }
   }
 
-  public static class JuniorJavaDev extends Object, JavaDev implements SpecificSerializable {
-    JavaDev zapp = new JavaDev();
-    JavaDev hubert = new JavaDev();
-
-    String askZapp(String question) {
-      return zapp.answerQuestion(question);
+  public static class NormalCat extends NakedCat {
+    public NormalCat() {
+      super();
     }
 
-    String askHubert(String question) {
-      return hubert.answerQuestion(question);
+    public NormalCat(String name) {
+      System.out.println("My name is " + name);
+    }
+
+    public NakedCat shave() {
+      return this;
+    }
+  }
+
+  public static class SiamCat extends NormalCat {
+    public SiamCat(String name) {
+      super(name);
     }
   }
 }
