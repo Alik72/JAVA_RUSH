@@ -1,14 +1,23 @@
 package com.javarush.test;
 
-/* Статики 1
-level 15.lesson09.task01;
-В статическом блоке инициализировать labels 5 различными парами.
+/* Статики 2
+level 15.lesson09.task02;
+1. В статическом блоке считайте две переменные с консоли А и В с типом int.
+2. Не забыть про IOException, который надо обработать в блоке catch.
+3. Закрыть поток ввода методом close().
 */
 
 public class Solution {
-  public static Map<Double, String> labels = new HashMap<Double, String>();
+  public static int A;
+  public static int B;
+
+  public static final int MIN = min(A, B);
 
   public static void main(String[] args) {
-    System.out.println(labels);
+    System.out.println(MIN);
+  }
+
+  public static int min(int a, int b) {
+    return a < b ? a : b;
   }
 }
