@@ -1,32 +1,33 @@
 package com.javarush.test;
-/* ООП - Перегрузка - убираем лишнее
-level 15.lesson04.task03;
-1. Подумайте, какая из реализаций метода print будет вызвана.
-2. Удалите все лишние реализации метода print.
+/* Мужчина или женщина?
+level 15.lesson04.task04;
+1. В методе main создать 2 человека man и woman. man с типом Man, woman с типом Woman.
+2. Изменить метод printName так, чтобы он выполнялся для man и woman.
+3. Реализация метода printName должна быть одна.
 */
 
 public class Solution {
   public static void main(String[] args) {
-    print(1);
+    man = new Man();
+    woman = new Woman();
+
+    printName(man);
+    printName(woman);
   }
 
-  public static void print(byte b) {
-    System.out.println("Я буду Java прогером!");
+  public static void printName(Man man) {
+
   }
 
-  public static void print(double d) {
-    System.out.println("Я буду Java прогером!");
+  public static class Human {
+
   }
 
-  public static void print(long l) {
-    System.out.println("Я буду Java прогером!");
+  public static class Man extends Human {
+
   }
 
-  public static void print(float f) {
-    System.out.println("Я буду Java прогером!");
-  }
+  public static class Woman extends Human {
 
-  public static void print(char c) {
-    System.out.println("Я буду Java прогером!");
   }
 }
