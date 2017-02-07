@@ -1,20 +1,23 @@
 package com.javarush.test;
-/* Singleton
-level14.lesson08.bonus03;
-Класс является синглтоном (реализует паттерн(шаблон) Singleton), если позволяет создать всего один объект своего типа.
-
-Реализовать Singleton pattern:
-1. Создай класс Singleton в отдельном файле.
-2. Добавь в него статический метод getInstance().
-3. Метод getInstance должен возвращать один и тот же объект класса Singleton при любом вызове метода getInstance.
-4. Подумай, каким образом можно запретить создание других объектов этого класса.
-5. Сделай все конструкторы в классе Singleton приватными (private).
-
-6. В итоге должна быть возможность создать объект (экземпляр класса) ТОЛЬКО используя метод getInstance.
+/* ООП - Расставить интерфейсы
+level 15.lesson02.task01;
+1. Добавить все возможные интерфейсы из Movable, Sellable, Discountable в класс Clothes.
+2. Реализовать их методы.
 */
-public class Solution
-{
-  public static void main(String[] args)
-  {
+
+public class Solution {
+  public static interface Movable {
+    boolean getAllowedAction(String name);
+  }
+
+  public static interface Sellable {
+    Object getAllowedAction(String name);
+  }
+
+  public static interface Discountable {
+    Object getAllowedAction();
+  }
+
+  public static class Clothes {
   }
 }
