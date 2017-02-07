@@ -1,63 +1,60 @@
 package com.javarush.test;
 
-/* MovieFactory
-level 14.lesson08.home06;
-Расширение функционала по аналогии, чтение с консоли:
-1. Разобраться, что программа умеет делать.
-2. Все классы должны быть внутри класса Solution.
-3. Добавить классы Cartoon, Thriller.
-4. Разобраться, как мы получаем объект класса SoapOpera по ключу "soapOpera".
-Аналогично получению объекта SoapOpera сделать:
-5. Добавить в MovieFactory.getMovie получение объекта Cartoon для ключа "cartoon".
-6. Добавить в MovieFactory.getMovie получение объекта Thriller для ключа "thriller".
 
-7. Считать с консоли несколько ключей (строк).
-7.1. Ввод заканчивается, как только вводится строка не совпадающая с одной из: "cartoon", "thriller", "soapOpera".
-8. Создать переменную movie класса Movie и для каждой введенной строки(ключа):
-8.1. Получить объект используя MovieFactory.getMovie и присвоить его переменной movie.
-8.2. Вывести на экран movie.getClass().getSimpleName().
+/* Клининговый центр
+level 14.lesson08.home07;
+Клининговый центр
+1. Реализовать метод cleanAllApartaments.
+Для каждого объекта из apartaments:
+2. Для однокомнатных квартир (Apt1Room) вызвать метод clean1Room.
+т.е. если объект типа Apt1Room, то вызвать у него метод clean1Room.
+3. Для двухкомнатных квартир (Apt2Room) вызвать метод clean2Rooms
+т.е. если объект типа Apt2Room, то вызвать у него метод clean2Rooms.
+4. Для трехкомнатных квартир (Apt3Room) вызвать метод clean3Rooms
+т.е. если объект типа Apt3Room, то вызвать у него метод clean3Rooms.
 */
-
 public class Solution
 {
-  public static void main(String[] args) throws Exception
+  public static void main(String[] args)
   {
-    //ввести с консоли несколько ключей (строк), пункт 7
+    List<Apartament> apartaments = new ArrayList<Apartament>();
+    apartaments.add(new Apt1Room());
+    apartaments.add(new Apt2Room());
+    apartaments.add(new Apt3Room());
 
-        /*
-8 Создать переменную movie класса Movie и для каждой введенной строки(ключа):
-8.1 получить объект используя MovieFactory.getMovie и присвоить его переменной movie
-8.2 вывести на экран movie.getClass().getSimpleName()
-        */
-
+    cleanAllApartaments(apartaments);
   }
 
-  static class MovieFactory
+  public static void cleanAllApartaments(List<Apartament> apartaments)
   {
+    //написать тут вашу реализацию пунктов 1-4
+  }
 
-    static Movie getMovie(String key)
+  static interface Apartament
+  {
+  }
+
+  static class Apt1Room implements Apartament
+  {
+    void clean1Room()
     {
-      Movie movie = null;
-
-      //создание объекта SoapOpera (мыльная опера) для ключа "soapOpera"
-      if ("soapOpera".equals(key))
-      {
-        movie = new SoapOpera();
-      }
-
-      //напишите тут ваш код, пункты 5,6
-
-      return movie;
+      System.out.println("1 room is cleaned");
     }
   }
 
-  static abstract class Movie
+  static class Apt2Room implements Apartament
   {
+    void clean2Rooms()
+    {
+      System.out.println("2 rooms are cleaned");
+    }
   }
 
-  static class SoapOpera extends Movie
+  static class Apt3Room implements Apartament
   {
+    void clean3Rooms()
+    {
+      System.out.println("3 rooms are cleaned");
+    }
   }
-
-  //Напишите тут ваши классы, пункт 3
 }
