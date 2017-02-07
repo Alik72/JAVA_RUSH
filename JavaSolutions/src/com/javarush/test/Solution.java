@@ -1,70 +1,47 @@
 package com.javarush.test;
-/* Исправление ошибок
-level14.lesson08.home08;
-1. Подумать, как связаны интерфейсы Swimable(способен плавать) и Walkable(способен ходить) с классом OceanAnimal(животное океана).
-2. Расставить правильно наследование интерфейсов и класса OceanAnimal.
-3. Подумать, как могут быть связаны классы  Orca(Косатка), Whale(Кит), Otter(Выдра) с классом OceanAnimal.
-4. Расставить правильно наследование между классами Orca, Whale, Otter и классом OceanAnimal.
-5. Подумать, какой класс должен реализовать интерфейс Walkable и добавить интерфейc этому классу.
-6. Подумать, какое животное еще не умеет плавать и добавить ему интерфейс Swimable.
+/* Валюты
+level14.lesson08.home09;
+1. Реализуй метод getAmount в классе Money:
+1.1. Подумай, какого типа нужно создать приватную переменную, если метод getAmount будет ее возвращать.
+1.2. Создай приватную переменную этого типа и верни ее в методе getAmount.
+1.3. В конструкторе присвой ей значение, полученное параметром.
+2. В отдельном файле создай класс Hrivna.
+3. Наследуй класс Hrivna от класса Money.
+4. В классе Hrivna реализуй метод getCurrencyName, который возвращает "HRN".
+5. В отдельном файле создай класс USD.
+6. Наследуй класс USD от класса Money.
+7. В классе USD реализуй метод getCurrencyName, который возвращает "USD".
+8. Подумай, объекты каких классов можно добавить в список(лист) allMoney.
+9. Добавь в конструктор класса Person заполнение листа allMoney объектами всех возможных классов.
 */
 
 public class Solution
 {
   public static void main(String[] args)
   {
-/*
-        Swimable animal = new Orca();
-        animal.swim();
-        animal = new Whale();
-        animal.swim();
-        animal = new Otter();
-        animal.swim();
-*/
-  }
-
-  public static void test(Swimable animal)
-  {
-    animal.swim();
-  }
-
-  static interface Walkable
-  {
-    void walk();
-  }
-
-  static interface Swimable
-  {
-    void swim();
-  }
-
-  static abstract class OceanAnimal
-  {
-    public void swim()
+    Person ivan = new Person("Иван");
+    for (Money money : ivan.getAllMoney())
     {
-      OceanAnimal currentAnimal = (OceanAnimal) getCurrentAnimal();
-      currentAnimal.swimming();
+      System.out.println(ivan.name + " имеет заначку в размере " + money.getAmount() + " " + money.getCurrencyName());
+    }
+  }
+
+  static class Person
+  {
+    public String name;
+
+    Person(String name)
+    {
+      this.name = name;
+      this.allMoney = new ArrayList<Money>();
+      //Add your code here
     }
 
-    private void swimming()
+    private List<Money> allMoney;
+
+    public List<Money> getAllMoney()
     {
-      System.out.println(getCurrentAnimal().getClass().getSimpleName() + " is swimming");
+      return allMoney;
     }
-
-    abstract Swimable getCurrentAnimal();
-  }
-
-  static class Orca
-  {
-  }
-
-  static class Whale
-  {
-
-  }
-
-  static class Otter
-  {
-
   }
 }
