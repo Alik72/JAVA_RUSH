@@ -1,27 +1,43 @@
 package com.javarush.test;
-/* ООП - наследование животных
-level 15.lesson02.task02;
-1. Создать public static класс Goose(Гусь).
-2. Создать public static класс Dragon(Дракон).
-3. Унаследовать класс Goose от BigAnimal или SmallAnimal, подумать, какой логически больше подходит.
-4. Унаследовать класс Dragon от BigAnimal или SmallAnimal, подумать, какой логически больше подходит.
-5. В классах Goose и Dragon переопределить метод String getSize(), расширить видимость до максимальной.
-6. В классе Goose метод getSize должен возвращать строку "Гусь маленький, " + [getSize родительского класса].
-7. В классе Dragon метод getSize должен возвращать строку "Дракон большой, " + [getSize родительского класса].
+/* ООП - машинки
+level 15.lesson02.task03;
+1. Для вывода использовать можно только переменные из класса Constants.
+2. В классе Ferrari реализуйте метод printlnDesire, чтобы он выводил на экран "Я хочу ездить на Феррари".
+3. В классе Lanos реализуйте метод printlnDesire, чтобы он выводил на экран "Я хочу ездить на Ланосе".
+4. Создайте public static класс LuxuriousCar(РоскошнаяМашина).
+5. Создайте public static класс CheapCar(ДешеваяМашина).
+6. Унаследуйте Ferrari и Lanos от CheapCar и LuxuriousCar, подумайте, какой класс для кого.
+7. В классе LuxuriousCar реализуйте метод printlnDesire, чтобы он выводил на экран "Я хочу ездить на роскошной машине".
+8. В классе CheapCar реализуйте метод printlnDesire, чтобы он выводил на экран "Я хочу ездить на дешевой машине".
+9. В класах LuxuriousCar и CheapCar для метода printlnDesire расставьте различными способами модификаторы доступа так,
+чтобы в классах Ferrari и Lanos выполнялось расширение видимости.
 */
 
 public class Solution {
-  //добавьте классы Goose и Dragon тут
+  public static void main(String[] args) {
+    new Solution.LuxuriousCar().printlnDesire();
+    new Solution.CheapCar().printlnDesire();
+    new Solution.Ferrari().printlnDesire();
+    new Solution.Lanos().printlnDesire();
+  }
 
-  public static class BigAnimal {
-    protected String getSize() {
-      return "как динозавр";
+  public static class Ferrari {
+    public void printlnDesire() {
+      //add your code here
     }
   }
 
-  public static class SmallAnimal {
-    String getSize() {
-      return "как кошка";
+  public static class Lanos {
+    public void printlnDesire() {
+      //add your code here
     }
+  }
+
+  public static class Constants {
+    public static String WANT_STRING = "Я хочу ездить на ";
+    public static String LUXURIOUS_CAR = "роскошной машине";
+    public static String CHEAP_CAR = "дешевой машине";
+    public static String FERRARY_NAME = "Феррари";
+    public static String LANOS_NAME = "Ланосе";
   }
 }
