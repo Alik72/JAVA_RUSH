@@ -1,3 +1,4 @@
+package com.javarush.task.task17.task1720;
 
 /*Банкомат
 Разберись, как работает программа
