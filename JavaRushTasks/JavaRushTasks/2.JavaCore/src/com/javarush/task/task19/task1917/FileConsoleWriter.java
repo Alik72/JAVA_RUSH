@@ -1,0 +1,17 @@
+package com.javarush.task.task19.task1917;
+
+/* 
+Свой FileWriter
+Реализовать логику FileConsoleWriter.
+Класс FileConsoleWriter должен содержать приватное поле FileWriter fileWriter.
+Класс FileConsoleWriter должен содержать все конструкторы, которые инициализируют fileWriter для записи.
+
+При записи данных в файл, должен дублировать эти данные на консоль.
+*/
+
+public class FileConsoleWriter {
+    public static void main(String[] args) {
+
+    }
+
+}
