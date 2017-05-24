@@ -33,7 +33,22 @@ public class Hippodrome {
             horses.get(i).move();
         }
     }
-    public void print (){    }
+    public void print (){
+        for (int i = 0; i < horses.size(); i++) {
+            horses.get(i).print();
+
+        }
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+    }
 
     public static void main(String[] args) {
 
