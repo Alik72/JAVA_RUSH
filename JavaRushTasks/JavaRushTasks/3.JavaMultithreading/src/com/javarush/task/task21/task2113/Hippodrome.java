@@ -36,7 +36,6 @@ public class Hippodrome {
     public void print (){
         for (int i = 0; i < horses.size(); i++) {
             horses.get(i).print();
-
         }
         System.out.println("");
         System.out.println("");
@@ -50,7 +49,7 @@ public class Hippodrome {
         System.out.println("");
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
       game = new Hippodrome(new ArrayList<>()) ;
 
@@ -60,6 +59,7 @@ public class Hippodrome {
         game.getHorses().add(o);
         game.getHorses().add(d);
         game.getHorses().add(t);
+        game.run();
 
     }
 }
