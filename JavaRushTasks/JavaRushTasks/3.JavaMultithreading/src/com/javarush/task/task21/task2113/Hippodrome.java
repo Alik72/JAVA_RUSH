@@ -21,6 +21,10 @@ public class Hippodrome {
 
     public static Hippodrome game;
 
+    public void run (){    }
+    public void move (){    }
+    public void print (){    }
+
     public static void main(String[] args) {
 
       game = new Hippodrome(new ArrayList<>()) ;
