@@ -28,7 +28,11 @@ public class Hippodrome {
             Thread.sleep(200);
         }
     }
-    public void move (){    }
+    public void move (){
+        for (int i = 0; i < horses.size(); i++) {
+            horses.get(i).move();
+        }
+    }
     public void print (){    }
 
     public static void main(String[] args) {
