@@ -1,5 +1,6 @@
 package com.javarush.task.task21.task2113;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,8 +19,18 @@ public class Hippodrome {
         this.horses = horses;
     }
 
+    public static Hippodrome game;
 
     public static void main(String[] args) {
+
+      game = new Hippodrome(new ArrayList<>()) ;
+
+        Horse o = new Horse("one",3, 0);
+        Horse d = new Horse("two",3, 0);
+        Horse t = new Horse("three",3, 0);
+        game.getHorses().add(o);
+        game.getHorses().add(d);
+        game.getHorses().add(t);
 
     }
 }
