@@ -15,8 +15,19 @@ public class Room {
         this.height = height;
         this.snake = snake;
     }
+    public static void main(String[] args) {
+        Snake snake = new Snake(0, 0);
+        game = new Room(400, 400, snake);
+        snake.setDirection(SnakeDirection.DOWN);
+        game.createMouse();
+        game.run();
 
+    }
+    public void sleep(){
+
+    }
     public void run() {
+        sleep();
     }
 
     public void print() {
@@ -29,13 +40,6 @@ public class Room {
     public void eatMouse(){
         createMouse();
     }
-    public static void main(String[] args) {
-        Snake snake = new Snake(0, 0);
-        game = new Room(400, 400, snake);
-        snake.setDirection(SnakeDirection.DOWN);
-
-    }
-
     public int getWidth() {
         return width;
     }
