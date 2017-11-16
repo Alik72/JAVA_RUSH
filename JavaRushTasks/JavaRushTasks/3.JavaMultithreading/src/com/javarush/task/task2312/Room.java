@@ -7,16 +7,8 @@ public class Room {
     private int width;
     private int height;
     private Mouse mouse;
-
-    public Snake getSnake() {
-        return snake;
-    }
-
-    public void setSnake(Snake snake) {
-        this.snake = snake;
-    }
-
     private Snake snake;
+    public static Room game;
 
     public Room(int width, int height, Snake snake) {
         this.width = width;
@@ -24,7 +16,16 @@ public class Room {
         this.snake = snake;
     }
 
+    public void run() {
+    }
+
+    public void print() {
+    }
+
     public static void main(String[] args) {
+        Snake snake = new Snake(0, 0);
+        game = new Room(400, 400, snake);
+        snake.setDirection(SnakeDirection.DOWN);
 
     }
 
@@ -50,5 +51,13 @@ public class Room {
 
     public void setMouse(Mouse mouse) {
         this.mouse = mouse;
+    }
+
+    public Snake getSnake() {
+        return snake;
+    }
+
+    public void setSnake(Snake snake) {
+        this.snake = snake;
     }
 }
