@@ -1,8 +1,7 @@
 package com.javarush.task.task15.task1528;
 
 /* 
-ООП - наследование
-Исправь класс Hrivna так, чтоб избежать возникновения ошибки StackOverflowError.
+ООП. Hrivna — тоже деньги
 */
 
 public class Solution {
