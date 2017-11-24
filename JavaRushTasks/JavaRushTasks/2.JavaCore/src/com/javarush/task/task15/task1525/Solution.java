@@ -8,9 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /* 
-ФФайл в статическом блоке
-1. Инициализируй переменную Statics.FILE_NAME полным путем к файлу с данными, который содержит несколько строк.
-2. В статическом блоке считай из файла с именем Statics.FILE_NAME все строки и добавь их по-отдельности в List lines.
+Файл в статическом блоке
 */
 
 public class Solution {
