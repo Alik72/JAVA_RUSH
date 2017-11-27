@@ -1,0 +1,13 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.testng:testng:6.11'
+    compile 'org.seleniumhq.selenium:selenium-java:3.6.0'
+    compile 'de.openkeyword:autoit:0.1.13'
+    compile 'com.hynnet:jacob:1.18'
+
+}
